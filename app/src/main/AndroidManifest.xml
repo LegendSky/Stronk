@@ -23,7 +23,7 @@
         </activity>
         <activity
             android:name=".activity.SimpleTabsActivity"
-            android:label="@string/title_activity_simple_tabs"
+            android:label="@string/title_activity_workouts"
             android:parentActivityName=".activity.MainActivity" >
         </activity>
         <activity
