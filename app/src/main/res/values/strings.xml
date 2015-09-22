@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Material Tabs</string>
+    <string name="app_name">STRONK</string>
 
     <string name="action_settings">Settings</string>
 
@@ -15,7 +15,7 @@
     <string name="two">TWO</string>
     <string name="title_activity_scrollable_tabs">Scrollable Tabs</string>
     <string name="title_activity_simple_tabs">Simple Tabs</string>
-    <string name="btn_simple_tabs">Simple Tabs</string>
+    <string name="btn_workouts">Workouts</string>
     <string name="btn_scrollable_tabs">Scrollable Tabs</string>
     <string name="btn_icon_text_tabs">Icon &amp; Text Tabs</string>
     <string name="btn_icon_tabs">Only Icon Tabs</string>
