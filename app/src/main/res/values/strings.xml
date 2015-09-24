@@ -28,7 +28,38 @@
     <string name="title_activity_pinned_top_tabs">Pin Top Tabs</string>
     <string name="title_activity_main2">Main2Activity</string>
 
-    <string name="hello_world">Hello world!</string>
+    <!-- Exercise day -->
+    <string name="Monday_workout">Monday workout</string>
+    <string name="Tuesday_workout">Tuesday workout</string>
+    <string name="Thursday_workout">Thursday workout</string>
+    <string name="Friday_workout">Friday workout</string>
 
+    <!-- Exercise titles -->
+    <string name="OH_Press">OH Press</string>
+    <string name="Bench_Press">Bench Press</string>
+    <string name="Incline_DB_Press">Incline DB Press</string>
+    <string name="OH_Triceps_SS_Lat_Raises">OH Triceps SS Lat Raises</string>
+    <string name="Deadlift">Deadlift</string>
+    <string name="BB_Row">BB Row</string>
+    <string name="Pull_Ups">Pull Ups</string>
+    <string name="Hammer_Curls">Hammer Curls</string>
+    <string name="DB_Curls">DB Curls</string>
 
+    <!-- Rest note -->
+    <string name="Rest2Min">Rest for 2 minutes after your sets</string>
+    <string name="Rest3Min">Rest for 3 minutes after your warm up</string>
+
+    <!-- Intensities -->
+    <string name="OneFive">(1 x 5+)</string>
+    <string name="ThreeEight">(3 x 8-12)</string>
+    <string name="FourEight">(4 x 8-12)</string>
+    <string name="FiveFive">(5 x 5)</string>
+
+    <!-- Set titles -->
+    <string name="Set1">Set1</string>
+    <string name="Set2">Set2</string>
+    <string name="Set3">Set3</string>
+    <string name="Set4">Set4</string>
+    <string name="Set5">Set5</string>
+    <string name="WarmUp">Warm Up(3 min rest)</string>
 </resources>
