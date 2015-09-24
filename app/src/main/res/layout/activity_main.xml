@@ -24,38 +24,31 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/btnSimpleTabs"
+            android:id="@+id/btnPull1"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="@string/btn_workouts"
+            android:text="@string/Pull_1"
             android:textSize="15dp" />
 
         <Button
-            android:id="@+id/btnScrollableTabs"
+            android:id="@+id/btnPull2"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="@string/btn_scrollable_tabs"
+            android:text="@string/Pull_2"
             android:textSize="15dp" />
 
         <Button
-            android:id="@+id/btnIconTextTabs"
+            android:id="@+id/btnPush1"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="@string/btn_icon_text_tabs"
+            android:text="@string/Push_1"
             android:textSize="15dp" />
 
         <Button
-            android:id="@+id/btnIconTabs"
+            android:id="@+id/btnPush2"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="@string/btn_icon_tabs"
-            android:textSize="15dp" />
-
-        <Button
-            android:id="@+id/btnCustomIconTabs"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/btn_custom_icon_tabs"
+            android:text="@string/Push_2"
             android:textSize="15dp" />
 
     </LinearLayout>

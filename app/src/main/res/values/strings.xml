@@ -33,6 +33,10 @@
     <string name="Tuesday_workout">Tuesday workout</string>
     <string name="Thursday_workout">Thursday workout</string>
     <string name="Friday_workout">Friday workout</string>
+    <string name="Pull_1">Pull 1</string>
+    <string name="Pull_2">Pull 2</string>
+    <string name="Push_1">Push 1</string>
+    <string name="Push_2">Push 2</string>
 
     <!-- Exercise titles -->
     <string name="OH_Press">OH Press</string>

@@ -12,7 +12,7 @@ import info.androidhive.materialtabs.R;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Toolbar toolbar;
-    private Button btnSimpleTabs, btnScrollableTabs, btnIconTextTabs, btnIconTabs, btnCustomIconTextTabs;
+    private Button btnPull1, btnPull2, btnPush1, btnPush2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,38 +21,43 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        btnSimpleTabs = (Button) findViewById(R.id.btnSimpleTabs);
-        btnScrollableTabs = (Button) findViewById(R.id.btnScrollableTabs);
-        btnIconTextTabs = (Button) findViewById(R.id.btnIconTextTabs);
-        btnIconTabs = (Button) findViewById(R.id.btnIconTabs);
-        btnCustomIconTextTabs = (Button) findViewById(R.id.btnCustomIconTabs);
+        btnPull1 = (Button) findViewById(R.id.btnPull1);
+        btnPull2 = (Button) findViewById(R.id.btnPull2);
+        btnPush1 = (Button) findViewById(R.id.btnPush1);
+        btnPush2 = (Button) findViewById(R.id.btnPush2);
+        //btnCustomIconTextTabs = (Button) findViewById(R.id.btnCustomIconTabs);
 
-        btnSimpleTabs.setOnClickListener(this);
+        btnPull1.setOnClickListener(this);
+        btnPull2.setOnClickListener(this);
+        btnPush1.setOnClickListener(this);
+        btnPush2.setOnClickListener(this);
+
+        /*btnSimpleTabs.setOnClickListener(this);
         btnScrollableTabs.setOnClickListener(this);
         btnIconTextTabs.setOnClickListener(this);
         btnIconTabs.setOnClickListener(this);
-        btnCustomIconTextTabs.setOnClickListener(this);
+        btnCustomIconTextTabs.setOnClickListener(this);*/
 
     }
 
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.btnSimpleTabs:
+            case R.id.btnPull1:
                 startActivity(new Intent(MainActivity.this, SimpleTabsActivity.class));
                 break;
-            case R.id.btnScrollableTabs:
+            case R.id.btnPull2:
                 startActivity(new Intent(MainActivity.this, ScrollableTabsActivity.class));
                 break;
-            case R.id.btnIconTextTabs:
+            case R.id.btnPush1:
                 startActivity(new Intent(MainActivity.this, IconTextTabsActivity.class));
                 break;
-            case R.id.btnIconTabs:
+            case R.id.btnPush2:
                 startActivity(new Intent(MainActivity.this, IconTabsActivity.class));
                 break;
-            case R.id.btnCustomIconTabs:
+            /*case R.id.btnCustomIconTabs:
                 startActivity(new Intent(MainActivity.this, CustomViewIconTextTabsActivity.class));
-                break;
+                break;*/
         }
     }
 }
