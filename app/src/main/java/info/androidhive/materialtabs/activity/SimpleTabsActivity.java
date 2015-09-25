@@ -13,13 +13,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import info.androidhive.materialtabs.R;
-import info.androidhive.materialtabs.fragments.OneFragment;
 import info.androidhive.materialtabs.fragments.Pull1Fragment;
 import info.androidhive.materialtabs.fragments.Pull2Fragment;
 import info.androidhive.materialtabs.fragments.Push1Fragment;
 import info.androidhive.materialtabs.fragments.Push2Fragment;
-import info.androidhive.materialtabs.fragments.ThreeFragment;
-import info.androidhive.materialtabs.fragments.TwoFragment;
 
 public class SimpleTabsActivity extends AppCompatActivity {
 

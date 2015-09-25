@@ -48,7 +48,7 @@ public class WorkoutTabsActivity extends AppCompatActivity {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new Pull1Fragment(), "Workout");
         adapter.addFragment(new Pull2Fragment(), "Warm up");
-        adapter.addFragment(new Push1Fragment(), "Push1");
+        adapter.addFragment(new Push1Fragment(), "3");
         adapter.addFragment(new Push2Fragment(), "Push2");
         viewPager.setAdapter(adapter);
     }

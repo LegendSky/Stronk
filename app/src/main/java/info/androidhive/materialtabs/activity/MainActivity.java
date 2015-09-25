@@ -47,17 +47,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(MainActivity.this, SimpleTabsActivity.class));
                 break;
             case R.id.btnPull2:
-                startActivity(new Intent(MainActivity.this, ScrollableTabsActivity.class));
+                startActivity(new Intent(MainActivity.this, SimpleTabsActivity.class));
                 break;
             case R.id.btnPush1:
-                startActivity(new Intent(MainActivity.this, IconTextTabsActivity.class));
+                startActivity(new Intent(MainActivity.this, SimpleTabsActivity.class));
                 break;
             case R.id.btnPush2:
-                startActivity(new Intent(MainActivity.this, IconTabsActivity.class));
+                startActivity(new Intent(MainActivity.this, SimpleTabsActivity.class));
                 break;
-            /*case R.id.btnCustomIconTabs:
-                startActivity(new Intent(MainActivity.this, CustomViewIconTextTabsActivity.class));
-                break;*/
         }
     }
 }
