@@ -5,10 +5,13 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
 
 import info.androidhive.materialtabs.R;
 
-
+/**
+ * @author Simin
+ */
 public class Pull1Workout extends Fragment {
 
     public Pull1Workout() {
@@ -18,7 +21,6 @@ public class Pull1Workout extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     @Override

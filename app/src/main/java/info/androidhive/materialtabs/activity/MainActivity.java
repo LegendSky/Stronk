@@ -1,11 +1,16 @@
 package info.androidhive.materialtabs.activity;
 
 import android.content.Intent;
+import android.media.Ringtone;
+import android.media.RingtoneManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.Chronometer;
 
 import info.androidhive.materialtabs.R;
 
@@ -13,6 +18,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private Toolbar toolbar;
     private Button btnPull1, btnPull2, btnPush1, btnPush2;
+
+    private Ringtone ringtone;
+    private Chronometer chronometer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
