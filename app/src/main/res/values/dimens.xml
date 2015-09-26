@@ -10,4 +10,8 @@
     <!-- Menu button properties -->
     <dimen name="activity_button_text_size">15dp</dimen>
     <dimen name="activity_button_height">100dp</dimen>
+
+    <!-- Workout layout dimensions -->
+    <dimen name="workout_margin_left">20dp</dimen>
+
 </resources>

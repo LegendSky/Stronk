@@ -13,6 +13,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/workout_margin_left"
         android:textColor="@android:color/black" />
 
     <CheckBox
@@ -23,6 +24,7 @@
         android:layout_below="@+id/Title1"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/workout_margin_left"
         android:checked="false" />
 
     <CheckBox
@@ -76,6 +78,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="30dp"
+        android:layout_marginLeft="@dimen/workout_margin_left"
         android:textColor="@android:color/black" />
 
     <CheckBox
@@ -86,6 +89,7 @@
         android:layout_below="@+id/Title2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/workout_margin_left"
         android:checked="false" />
 
     <CheckBox
@@ -119,6 +123,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="30dp"
+        android:layout_marginLeft="@dimen/workout_margin_left"
         android:textColor="@android:color/black" />
 
     <CheckBox
@@ -129,6 +134,7 @@
         android:layout_below="@+id/Title3"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/workout_margin_left"
         android:checked="false" />
 
     <CheckBox
@@ -162,6 +168,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="30dp"
+        android:layout_marginLeft="@dimen/workout_margin_left"
         android:textColor="@android:color/black" />
 
     <CheckBox
@@ -172,6 +179,7 @@
         android:layout_below="@+id/Title4"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/workout_margin_left"
         android:checked="false" />
 
     <CheckBox
