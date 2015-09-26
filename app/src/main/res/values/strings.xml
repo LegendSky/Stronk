@@ -10,12 +10,14 @@
     <string name="two">TWO</string>
     <string name="three">THREE</string>
     <string name="four">FOUR</string>
+    <string name="warmup">Warm Up</string>
+    <string name="other">Other</string>
 
     <!-- title of workout pages -->
-    <string name="title_activity_pull1">Pull1</string>
-    <string name="title_activity_pull2">Pull2</string>
-    <string name="title_activity_push1">Push1</string>
-    <string name="title_activity_push2">Push2</string>
+    <string name="title_activity_pull1">Pull 1</string>
+    <string name="title_activity_pull2">Pull 2</string>
+    <string name="title_activity_push1">Push 1</string>
+    <string name="title_activity_push2">Push 2</string>
 
     <!-- Exercise day -->
     <string name="Pull_1">Pull 1</string>
@@ -50,5 +52,5 @@
     <string name="Set3">Set3</string>
     <string name="Set4">Set4</string>
     <string name="Set5">Set5</string>
-    <string name="WarmUp">Warm Up(3 min rest)</string>
+    <string name="WarmUpRest">Warm Up(3 min rest)</string>
 </resources>
