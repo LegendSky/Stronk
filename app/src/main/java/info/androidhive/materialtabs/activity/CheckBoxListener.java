@@ -1,6 +1,8 @@
 package info.androidhive.materialtabs.activity;
 
 import android.media.Ringtone;
+import android.media.RingtoneManager;
+import android.net.Uri;
 import android.os.SystemClock;
 import android.view.View;
 import android.widget.CheckBox;
@@ -14,7 +16,7 @@ public class CheckBoxListener implements View.OnClickListener {
     private Chronometer chronometer;
     private Ringtone ringtone;
 
-    public CheckBoxListener(Chronometer chronometer, Ringtone ringtone, CheckBox checkBox) {
+    public CheckBoxListener(CheckBox checkBox, Ringtone ringtone, Chronometer chronometer) {
         this.checkBox = checkBox;
         this.chronometer = chronometer;
         this.ringtone = ringtone;
