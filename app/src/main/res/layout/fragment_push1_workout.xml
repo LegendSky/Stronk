@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <!-- Row 1 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/BB_Row"
+        android:id="@+id/Title1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Set1"
+        android:id="@+id/row1checkBox1"
+        android:layout_below="@+id/Title1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Set2"
+        android:id="@+id/row1checkBox2"
+        android:layout_below="@+id/Title1"
+        android:layout_toRightOf="@+id/row1checkBox1"
+        android:layout_toEndOf="@+id/row1checkBox1"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Set3"
+        android:id="@+id/row1checkBox3"
+        android:layout_below="@+id/Title1"
+        android:layout_toRightOf="@+id/row1checkBox2"
+        android:layout_toEndOf="@+id/row1checkBox2"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Set4"
+        android:id="@+id/row1checkBox4"
+        android:layout_below="@+id/Title1"
+        android:layout_toRightOf="@+id/row1checkBox3"
+        android:layout_toEndOf="@+id/row1checkBox3"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Set5"
+        android:id="@+id/row1checkBox5"
+        android:layout_below="@+id/Title1"
+        android:layout_toRightOf="@+id/row1checkBox4"
+        android:layout_toEndOf="@+id/row1checkBox4"
+        android:checked="false" />
+
+    <!-- Row 2 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/Pull_Ups"
+        android:id="@+id/Title2"
+        android:layout_below="@+id/row1checkBox1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/black" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Set1"
+        android:id="@+id/row2checkBox1"
+        android:layout_below="@+id/Title2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Set2"
+        android:id="@+id/row2checkBox2"
+        android:layout_below="@+id/Title2"
+        android:layout_toRightOf="@+id/row2checkBox1"
+        android:layout_toEndOf="@+id/row2checkBox1"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Set3"
+        android:id="@+id/row2checkBox3"
+        android:layout_below="@+id/Title2"
+        android:layout_toRightOf="@+id/row2checkBox2"
+        android:layout_toEndOf="@+id/row2checkBox2"
+        android:checked="false" />
+
+    <!-- Row 3 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/Hammer_Curls"
+        android:id="@+id/Title3"
+        android:layout_below="@+id/row2checkBox1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/black" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Set1"
+        android:id="@+id/row3checkBox1"
+        android:layout_below="@+id/Title3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Set2"
+        android:id="@+id/row3checkBox2"
+        android:layout_below="@+id/Title3"
+        android:layout_toRightOf="@+id/row3checkBox1"
+        android:layout_toEndOf="@+id/row3checkBox1"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Set3"
+        android:id="@+id/row3checkBox3"
+        android:layout_below="@+id/Title3"
+        android:layout_toRightOf="@+id/row3checkBox2"
+        android:layout_toEndOf="@+id/row3checkBox2"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Set4"
+        android:id="@+id/row3checkBox4"
+        android:layout_below="@+id/Title3"
+        android:layout_toRightOf="@+id/row3checkBox3"
+        android:layout_toEndOf="@+id/row3checkBox3"
+        android:checked="false" />
+
+    <!-- Row 4 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/DB_Curls"
+        android:id="@+id/Title4"
+        android:layout_below="@+id/row3checkBox1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/black" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Set1"
+        android:id="@+id/row4checkBox1"
+        android:layout_below="@+id/Title4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Set2"
+        android:id="@+id/row4checkBox2"
+        android:layout_below="@+id/Title4"
+        android:layout_toRightOf="@+id/row4checkBox1"
+        android:layout_toEndOf="@+id/row4checkBox1"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Set3"
+        android:id="@+id/row4checkBox3"
+        android:layout_below="@+id/Title4"
+        android:layout_toRightOf="@+id/row4checkBox2"
+        android:layout_toEndOf="@+id/row4checkBox2"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Set4"
+        android:id="@+id/row4checkBox4"
+        android:layout_below="@+id/Title4"
+        android:layout_toRightOf="@+id/row4checkBox3"
+        android:layout_toEndOf="@+id/row4checkBox3"
+        android:checked="false" />
+
+    <!-- Intensities -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/FiveFive"
+        android:id="@+id/row1intensity"
+        android:layout_alignTop="@+id/Title1"
+        android:layout_toRightOf="@+id/Title1"
+        android:layout_toEndOf="@+id/Title1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/ThreeEight"
+        android:id="@+id/row2intensity"
+        android:layout_alignTop="@+id/Title2"
+        android:layout_toRightOf="@+id/Title2"
+        android:layout_toEndOf="@+id/Title2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/FourEight"
+        android:id="@+id/row3intensity"
+        android:layout_alignTop="@+id/Title3"
+        android:layout_toRightOf="@+id/Title3"
+        android:layout_toEndOf="@+id/Title3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/FourEight"
+        android:id="@+id/row4intensity"
+        android:layout_alignTop="@+id/Title4"
+        android:layout_toRightOf="@+id/Title4"
+        android:layout_toEndOf="@+id/Title4" />
+
+    <!-- Chronometer -->
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chronometer"
+        android:textSize="40sp"
+        android:layout_below="@id/Title4"
+        android:layout_marginTop="150px"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Rest note -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textViewRest"
+        android:text="@string/Rest2Min"
+        android:layout_below="@id/chronometer"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

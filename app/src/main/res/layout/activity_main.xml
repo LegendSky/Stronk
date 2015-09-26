@@ -26,30 +26,30 @@
         <Button
             android:id="@+id/btnPull1"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/activity_button_height"
             android:text="@string/Pull_1"
-            android:textSize="15dp" />
+            android:textSize="@dimen/activity_button_text_size" />
 
         <Button
             android:id="@+id/btnPull2"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/activity_button_height"
             android:text="@string/Pull_2"
-            android:textSize="15dp" />
+            android:textSize="@dimen/activity_button_text_size" />
 
         <Button
             android:id="@+id/btnPush1"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/activity_button_height"
             android:text="@string/Push_1"
-            android:textSize="15dp" />
+            android:textSize="@dimen/activity_button_text_size" />
 
         <Button
             android:id="@+id/btnPush2"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/activity_button_height"
             android:text="@string/Push_2"
-            android:textSize="15dp" />
+            android:textSize="@dimen/activity_button_text_size" />
 
     </LinearLayout>
 

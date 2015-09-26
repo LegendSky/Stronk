@@ -25,35 +25,32 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnPull2 = (Button) findViewById(R.id.btnPull2);
         btnPush1 = (Button) findViewById(R.id.btnPush1);
         btnPush2 = (Button) findViewById(R.id.btnPush2);
-        //btnCustomIconTextTabs = (Button) findViewById(R.id.btnCustomIconTabs);
 
+        // Set click listeners.
         btnPull1.setOnClickListener(this);
         btnPull2.setOnClickListener(this);
         btnPush1.setOnClickListener(this);
         btnPush2.setOnClickListener(this);
-
-        /*btnSimpleTabs.setOnClickListener(this);
-        btnScrollableTabs.setOnClickListener(this);
-        btnIconTextTabs.setOnClickListener(this);
-        btnIconTabs.setOnClickListener(this);
-        btnCustomIconTextTabs.setOnClickListener(this);*/
-
     }
 
+    /**
+     * Buttons on start activity.
+     * @param view
+     */
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btnPull1:
-                startActivity(new Intent(MainActivity.this, SimpleTabsActivity.class));
+                startActivity(new Intent(MainActivity.this, Pull1Activity.class));
                 break;
             case R.id.btnPull2:
-                startActivity(new Intent(MainActivity.this, SimpleTabsActivity.class));
+                startActivity(new Intent(MainActivity.this, Pull2Activity.class));
                 break;
             case R.id.btnPush1:
-                startActivity(new Intent(MainActivity.this, SimpleTabsActivity.class));
+                startActivity(new Intent(MainActivity.this, Push1Activity.class));
                 break;
             case R.id.btnPush2:
-                startActivity(new Intent(MainActivity.this, SimpleTabsActivity.class));
+                startActivity(new Intent(MainActivity.this, Push2Activity.class));
                 break;
         }
     }
