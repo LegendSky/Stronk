@@ -1,6 +1,7 @@
 package info.androidhive.materialtabs.activity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.Uri;
@@ -11,6 +12,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Chronometer;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import info.androidhive.materialtabs.R;
 

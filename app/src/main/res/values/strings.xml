@@ -43,6 +43,7 @@
     <string name="ThreeEight">(3 x 8-12)</string>
     <string name="FourEight">(4 x 8-12)</string>
     <string name="FiveFive">(5 x 5)</string>
+    <string name="dash">-</string>
 
     <!-- Set titles -->
     <string name="Set1">Set1</string>
