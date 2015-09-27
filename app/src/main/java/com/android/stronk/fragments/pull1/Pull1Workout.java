@@ -1,4 +1,4 @@
-package info.androidhive.materialtabs.fragments.pull2;
+package com.android.stronk.fragments.pull1;
 
 import android.media.Ringtone;
 import android.media.RingtoneManager;
@@ -11,26 +11,28 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.Chronometer;
 
-import info.androidhive.materialtabs.R;
-import info.androidhive.materialtabs.activity.CheckBoxListener;
+import info.androidhive.stronk.R;
+import com.android.stronk.activity.CheckBoxListener;
 
+/**
+ * @author Simin
+ */
+public class Pull1Workout extends Fragment {
 
-public class Pull2Workout extends Fragment {
-
-    public Pull2Workout() {
+    public Pull1Workout() {
         // Required empty public constructor
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_push1_workout,
+
+        View view = inflater.inflate(R.layout.fragment_pull1_workout,
                 container, false);
 
         // Chronometer.
@@ -42,10 +44,6 @@ public class Pull2Workout extends Fragment {
 
         // Initialise checkboxes.
         CheckBox row1cb1 = (CheckBox) view.findViewById(R.id.row1checkBox1);
-        CheckBox row1cb2 = (CheckBox) view.findViewById(R.id.row1checkBox2);
-        CheckBox row1cb3 = (CheckBox) view.findViewById(R.id.row1checkBox3);
-        CheckBox row1cb4 = (CheckBox) view.findViewById(R.id.row1checkBox4);
-        CheckBox row1cb5 = (CheckBox) view.findViewById(R.id.row1checkBox5);
 
         CheckBox row2cb1 = (CheckBox) view.findViewById(R.id.row2checkBox1);
         CheckBox row2cb2 = (CheckBox) view.findViewById(R.id.row2checkBox2);
@@ -63,10 +61,6 @@ public class Pull2Workout extends Fragment {
 
         // Add listener to checkbox.
         row1cb1.setOnClickListener(new CheckBoxListener(row1cb1, ringtone, chronometer));
-        row1cb2.setOnClickListener(new CheckBoxListener(row1cb2, ringtone, chronometer));
-        row1cb3.setOnClickListener(new CheckBoxListener(row1cb3, ringtone, chronometer));
-        row1cb4.setOnClickListener(new CheckBoxListener(row1cb4, ringtone, chronometer));
-        row1cb5.setOnClickListener(new CheckBoxListener(row1cb5, ringtone, chronometer));
 
         row2cb1.setOnClickListener(new CheckBoxListener(row2cb1, ringtone, chronometer));
         row2cb2.setOnClickListener(new CheckBoxListener(row2cb2, ringtone, chronometer));
@@ -75,12 +69,12 @@ public class Pull2Workout extends Fragment {
         row3cb1.setOnClickListener(new CheckBoxListener(row3cb1, ringtone, chronometer));
         row3cb2.setOnClickListener(new CheckBoxListener(row3cb2, ringtone, chronometer));
         row3cb3.setOnClickListener(new CheckBoxListener(row3cb3, ringtone, chronometer));
-        row2cb3.setOnClickListener(new CheckBoxListener(row3cb4, ringtone, chronometer));
+        row3cb4.setOnClickListener(new CheckBoxListener(row3cb4, ringtone, chronometer));
 
         row4cb1.setOnClickListener(new CheckBoxListener(row4cb1, ringtone, chronometer));
         row4cb2.setOnClickListener(new CheckBoxListener(row4cb2, ringtone, chronometer));
         row4cb3.setOnClickListener(new CheckBoxListener(row4cb3, ringtone, chronometer));
-        row2cb3.setOnClickListener(new CheckBoxListener(row4cb4, ringtone, chronometer));
+        row4cb4.setOnClickListener(new CheckBoxListener(row4cb4, ringtone, chronometer));
 
         return view;
     }

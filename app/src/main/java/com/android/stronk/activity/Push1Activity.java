@@ -1,8 +1,5 @@
-package info.androidhive.materialtabs.activity;
+package com.android.stronk.activity;
 
-import android.media.Ringtone;
-import android.media.RingtoneManager;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -11,19 +8,17 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
-import android.widget.CheckBox;
-import android.widget.Chronometer;
+
+import com.android.stronk.fragments.push1.Push1WarmUp;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import info.androidhive.materialtabs.R;
-import info.androidhive.materialtabs.fragments.pull1.Pull1Other;
-import info.androidhive.materialtabs.fragments.pull1.Pull1WarmUp;
-import info.androidhive.materialtabs.fragments.pull1.Pull1Workout;
+import info.androidhive.stronk.R;
+import com.android.stronk.fragments.push1.Push1Other;
+import com.android.stronk.fragments.push1.Push1Workout;
 
-public class Pull1Activity extends AppCompatActivity {
+public class Push1Activity extends AppCompatActivity {
 
     private Toolbar toolbar;
     private TabLayout tabLayout;
@@ -55,9 +50,9 @@ public class Pull1Activity extends AppCompatActivity {
      */
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new Pull1Workout(), "Workout");
-        adapter.addFragment(new Pull1WarmUp(), "Warm up");
-        adapter.addFragment(new Pull1Other(), "Other");
+        adapter.addFragment(new Push1Workout(), "Workout");
+        adapter.addFragment(new Push1WarmUp(), "Warm up");
+        adapter.addFragment(new Push1Other(), "Other");
         viewPager.setAdapter(adapter);
     }
 

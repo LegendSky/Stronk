@@ -1,4 +1,4 @@
-package info.androidhive.materialtabs;
+package info.androidhive.stronk;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

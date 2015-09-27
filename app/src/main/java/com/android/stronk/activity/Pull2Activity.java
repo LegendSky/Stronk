@@ -1,4 +1,4 @@
-package info.androidhive.materialtabs.activity;
+package com.android.stronk.activity;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -12,12 +12,12 @@ import android.support.v7.widget.Toolbar;
 import java.util.ArrayList;
 import java.util.List;
 
-import info.androidhive.materialtabs.R;
-import info.androidhive.materialtabs.fragments.push1.Push1Other;
-import info.androidhive.materialtabs.fragments.push1.Push1WarmUp;
-import info.androidhive.materialtabs.fragments.push1.Push1Workout;
+import info.androidhive.stronk.R;
+import com.android.stronk.fragments.pull2.Pull2Other;
+import com.android.stronk.fragments.pull2.Pull2WarmUp;
+import com.android.stronk.fragments.pull2.Pull2Workout;
 
-public class Push1Activity extends AppCompatActivity {
+public class Pull2Activity extends AppCompatActivity {
 
     private Toolbar toolbar;
     private TabLayout tabLayout;
@@ -49,9 +49,9 @@ public class Push1Activity extends AppCompatActivity {
      */
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new Push1Workout(), "Workout");
-        adapter.addFragment(new Push1WarmUp(), "Warm up");
-        adapter.addFragment(new Push1Other(), "Other");
+        adapter.addFragment(new Pull2Workout(), "Workout");
+        adapter.addFragment(new Pull2WarmUp(), "Warm up");
+        adapter.addFragment(new Pull2Other(), "Other");
         viewPager.setAdapter(adapter);
     }
 

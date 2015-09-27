@@ -1,24 +1,18 @@
-package info.androidhive.materialtabs.activity;
+package com.android.stronk.activity;
 
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.media.Ringtone;
-import android.media.RingtoneManager;
-import android.net.Uri;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.Chronometer;
-import android.widget.EditText;
-import android.widget.TextView;
 
-import info.androidhive.materialtabs.R;
+import info.androidhive.stronk.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 

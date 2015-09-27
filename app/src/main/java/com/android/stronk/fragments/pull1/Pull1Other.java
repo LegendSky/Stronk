@@ -1,4 +1,4 @@
-package info.androidhive.materialtabs.fragments.pull1;
+package com.android.stronk.fragments.pull1;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -11,8 +11,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import info.androidhive.materialtabs.R;
-import info.androidhive.materialtabs.activity.SharedPrefs;
+import com.android.stronk.activity.SharedPrefs;
+
+import info.androidhive.stronk.R;
 
 
 public class Pull1Other extends Fragment implements View.OnClickListener {

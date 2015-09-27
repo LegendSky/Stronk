@@ -1,4 +1,4 @@
-package info.androidhive.materialtabs.fragments.pull2;
+package com.android.stronk.fragments.push1;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -6,12 +6,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import info.androidhive.materialtabs.R;
+import info.androidhive.stronk.R;
 
 
-public class Pull2WarmUp extends Fragment{
+public class Push1WarmUp extends Fragment{
 
-    public Pull2WarmUp() {
+    public Push1WarmUp() {
         // Required empty public constructor
     }
 
@@ -24,7 +24,7 @@ public class Pull2WarmUp extends Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_pull2_warmup, container, false);
+        return inflater.inflate(R.layout.fragment_push1_warmup, container, false);
     }
 
 }

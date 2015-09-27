@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="info.androidhive.materialtabs" >
+    package="info.androidhive.stronk" >
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/MyMaterialTheme" >
+        android:theme="@style/StronkTheme" >
 
         <!-- Menu -->
         <activity
-            android:name=".activity.MainActivity"
+            android:name="com.android.stronk.activity.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -21,33 +21,33 @@
 
         <!-- Workouts start -->
         <activity
-            android:name=".activity.Pull1Activity"
+            android:name="com.android.stronk.activity.Pull1Activity"
             android:label="@string/title_activity_pull1"
-            android:parentActivityName=".activity.MainActivity"
+            android:parentActivityName="com.android.stronk.activity.MainActivity"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".activity.Pull2Activity"
+            android:name="com.android.stronk.activity.Pull2Activity"
             android:label="@string/title_activity_pull2"
-            android:parentActivityName=".activity.MainActivity"
+            android:parentActivityName="com.android.stronk.activity.MainActivity"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".activity.Push1Activity"
+            android:name="com.android.stronk.activity.Push1Activity"
             android:label="@string/title_activity_push1"
-            android:parentActivityName=".activity.MainActivity"
+            android:parentActivityName="com.android.stronk.activity.MainActivity"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".activity.Push2Activity"
+            android:name="com.android.stronk.activity.Push2Activity"
             android:label="@string/title_activity_push2"
-            android:parentActivityName=".activity.MainActivity"
+            android:parentActivityName="com.android.stronk.activity.MainActivity"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".activity.SharedPrefs"
+            android:name="com.android.stronk.activity.SharedPrefs"
             android:label="@string/title_activity_prefs"
-            android:parentActivityName=".activity.MainActivity"
+            android:parentActivityName="com.android.stronk.activity.MainActivity"
             android:screenOrientation="portrait" >
         </activity>
     </application>

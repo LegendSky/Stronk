@@ -1,4 +1,4 @@
-package info.androidhive.materialtabs.activity;
+package com.android.stronk.activity;
 
 import android.app.Activity;
 import android.content.Context;
@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import info.androidhive.materialtabs.R;
+import info.androidhive.stronk.R;
 
 /**
  * Preference file, not used as of yet.

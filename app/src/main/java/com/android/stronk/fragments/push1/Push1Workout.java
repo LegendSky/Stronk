@@ -1,4 +1,4 @@
-package info.androidhive.materialtabs.fragments.push2;
+package com.android.stronk.fragments.push1;
 
 import android.media.Ringtone;
 import android.media.RingtoneManager;
@@ -11,13 +11,14 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.Chronometer;
 
-import info.androidhive.materialtabs.R;
-import info.androidhive.materialtabs.activity.CheckBoxListener;
+import com.android.stronk.activity.CheckBoxListener;
+
+import info.androidhive.stronk.R;
 
 
-public class Push2Workout extends Fragment {
+public class Push1Workout extends Fragment {
 
-    public Push2Workout() {
+    public Push1Workout() {
         // Required empty public constructor
     }
 
@@ -30,7 +31,7 @@ public class Push2Workout extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_push2_workout,
+        View view = inflater.inflate(R.layout.fragment_pull2_workout,
                 container, false);
 
         // Chronometer.

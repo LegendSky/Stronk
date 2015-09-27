@@ -1,4 +1,4 @@
-package info.androidhive.materialtabs.fragments.push1;
+package com.android.stronk.fragments.pull2;
 
 import android.media.Ringtone;
 import android.media.RingtoneManager;
@@ -11,13 +11,14 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.Chronometer;
 
-import info.androidhive.materialtabs.R;
-import info.androidhive.materialtabs.activity.CheckBoxListener;
+import com.android.stronk.activity.CheckBoxListener;
+
+import info.androidhive.stronk.R;
 
 
-public class Push1Workout extends Fragment {
+public class Pull2Workout extends Fragment {
 
-    public Push1Workout() {
+    public Pull2Workout() {
         // Required empty public constructor
     }
 
@@ -30,7 +31,7 @@ public class Push1Workout extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_pull2_workout,
+        View view = inflater.inflate(R.layout.fragment_push1_workout,
                 container, false);
 
         // Chronometer.
@@ -54,10 +55,12 @@ public class Push1Workout extends Fragment {
         CheckBox row3cb1 = (CheckBox) view.findViewById(R.id.row3checkBox1);
         CheckBox row3cb2 = (CheckBox) view.findViewById(R.id.row3checkBox2);
         CheckBox row3cb3 = (CheckBox) view.findViewById(R.id.row3checkBox3);
+        CheckBox row3cb4 = (CheckBox) view.findViewById(R.id.row3checkBox4);
 
         CheckBox row4cb1 = (CheckBox) view.findViewById(R.id.row4checkBox1);
         CheckBox row4cb2 = (CheckBox) view.findViewById(R.id.row4checkBox2);
         CheckBox row4cb3 = (CheckBox) view.findViewById(R.id.row4checkBox3);
+        CheckBox row4cb4 = (CheckBox) view.findViewById(R.id.row4checkBox4);
 
         // Add listener to checkbox.
         row1cb1.setOnClickListener(new CheckBoxListener(row1cb1, ringtone, chronometer));
@@ -73,10 +76,12 @@ public class Push1Workout extends Fragment {
         row3cb1.setOnClickListener(new CheckBoxListener(row3cb1, ringtone, chronometer));
         row3cb2.setOnClickListener(new CheckBoxListener(row3cb2, ringtone, chronometer));
         row3cb3.setOnClickListener(new CheckBoxListener(row3cb3, ringtone, chronometer));
+        row2cb3.setOnClickListener(new CheckBoxListener(row3cb4, ringtone, chronometer));
 
         row4cb1.setOnClickListener(new CheckBoxListener(row4cb1, ringtone, chronometer));
         row4cb2.setOnClickListener(new CheckBoxListener(row4cb2, ringtone, chronometer));
         row4cb3.setOnClickListener(new CheckBoxListener(row4cb3, ringtone, chronometer));
+        row2cb3.setOnClickListener(new CheckBoxListener(row4cb4, ringtone, chronometer));
 
         return view;
     }
