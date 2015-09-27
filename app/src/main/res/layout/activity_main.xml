@@ -31,17 +31,17 @@
             android:textSize="@dimen/activity_button_text_size" />
 
         <Button
-            android:id="@+id/btnPull2"
-            android:layout_width="fill_parent"
-            android:layout_height="@dimen/activity_button_height"
-            android:text="@string/Pull_2"
-            android:textSize="@dimen/activity_button_text_size" />
-
-        <Button
             android:id="@+id/btnPush1"
             android:layout_width="fill_parent"
             android:layout_height="@dimen/activity_button_height"
             android:text="@string/Push_1"
+            android:textSize="@dimen/activity_button_text_size" />
+
+        <Button
+            android:id="@+id/btnPull2"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/activity_button_height"
+            android:text="@string/Pull_2"
             android:textSize="@dimen/activity_button_text_size" />
 
         <Button

@@ -71,11 +71,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btnPull1:
                 startActivity(new Intent(MainActivity.this, Pull1Activity.class));
                 break;
-            case R.id.btnPull2:
-                startActivity(new Intent(MainActivity.this, Pull2Activity.class));
-                break;
             case R.id.btnPush1:
                 startActivity(new Intent(MainActivity.this, Push1Activity.class));
+                break;
+            case R.id.btnPull2:
+                startActivity(new Intent(MainActivity.this, Pull2Activity.class));
                 break;
             case R.id.btnPush2:
                 startActivity(new Intent(MainActivity.this, Push2Activity.class));

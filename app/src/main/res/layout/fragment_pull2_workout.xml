@@ -7,7 +7,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/Bench_Press"
+        android:text="@string/BB_Row"
         android:id="@+id/Title1"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -72,7 +72,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/OH_Press"
+        android:text="@string/Pull_Ups"
         android:id="@+id/Title2"
         android:layout_below="@+id/row1checkBox1"
         android:layout_alignParentLeft="true"
@@ -117,7 +117,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/Incline_DB_Press"
+        android:text="@string/Hammer_Curls"
         android:id="@+id/Title3"
         android:layout_below="@+id/row2checkBox1"
         android:layout_alignParentLeft="true"
@@ -157,12 +157,22 @@
         android:layout_toEndOf="@+id/row3checkBox2"
         android:checked="false" />
 
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Set4"
+        android:id="@+id/row3checkBox4"
+        android:layout_below="@+id/Title3"
+        android:layout_toRightOf="@+id/row3checkBox3"
+        android:layout_toEndOf="@+id/row3checkBox3"
+        android:checked="false" />
+
     <!-- Row 4 -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/OH_Triceps_SS_Lat_Raises"
+        android:text="@string/DB_Curls"
         android:id="@+id/Title4"
         android:layout_below="@+id/row3checkBox1"
         android:layout_alignParentLeft="true"
@@ -202,6 +212,16 @@
         android:layout_toEndOf="@+id/row4checkBox2"
         android:checked="false" />
 
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Set4"
+        android:id="@+id/row4checkBox4"
+        android:layout_below="@+id/Title4"
+        android:layout_toRightOf="@+id/row4checkBox3"
+        android:layout_toEndOf="@+id/row4checkBox3"
+        android:checked="false" />
+
     <!-- Intensities -->
     <TextView
         android:layout_width="wrap_content"
@@ -227,7 +247,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/ThreeEight"
+        android:text="@string/FourEight"
         android:id="@+id/row3intensity"
         android:layout_alignTop="@+id/Title3"
         android:layout_toRightOf="@+id/Title3"
@@ -237,7 +257,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/ThreeEight"
+        android:text="@string/FourEight"
         android:id="@+id/row4intensity"
         android:layout_alignTop="@+id/Title4"
         android:layout_toRightOf="@+id/Title4"
