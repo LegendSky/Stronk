@@ -17,7 +17,7 @@ import info.androidhive.materialtabs.R;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Toolbar toolbar;
-    private Button btnPull1, btnPull2, btnPush1, btnPush2;
+    private Button btnPull1, btnPull2, btnPush1, btnPush2, btnPrefs;
 
     private Ringtone ringtone;
     private Chronometer chronometer;
@@ -33,16 +33,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnPull2 = (Button) findViewById(R.id.btnPull2);
         btnPush1 = (Button) findViewById(R.id.btnPush1);
         btnPush2 = (Button) findViewById(R.id.btnPush2);
+        btnPrefs = (Button) findViewById(R.id.btnPrefs);
 
         // Set click listeners.
         btnPull1.setOnClickListener(this);
         btnPull2.setOnClickListener(this);
         btnPush1.setOnClickListener(this);
         btnPush2.setOnClickListener(this);
+        btnPrefs.setOnClickListener(this);
     }
 
     /**
-     * Buttons on start activity.
+     * Add activities to buttons.
      * @param view
      */
     @Override
@@ -59,6 +61,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btnPush2:
                 startActivity(new Intent(MainActivity.this, Push2Activity.class));
+                break;
+            case R.id.btnPrefs:
+                startActivity(new Intent(MainActivity.this, SharedPrefs.class));
                 break;
         }
     }

@@ -51,6 +51,13 @@
             android:text="@string/Push_2"
             android:textSize="@dimen/activity_button_text_size" />
 
+        <Button
+            android:id="@+id/btnPrefs"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/activity_button_height"
+            android:text="@string/prefs"
+            android:textSize="@dimen/activity_button_text_size" />
+
     </LinearLayout>
 
 

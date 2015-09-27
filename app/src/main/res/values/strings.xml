@@ -6,18 +6,16 @@
     <string name="action_settings">Settings</string>
 
     <!-- placeholder strings -->
-    <string name="one">ONE</string>
-    <string name="two">TWO</string>
-    <string name="three">THREE</string>
-    <string name="four">FOUR</string>
     <string name="warmup">Warm Up</string>
     <string name="other">Other</string>
+    <string name="prefs">Prefs</string>
 
-    <!-- title of workout pages -->
+    <!-- title of main menu buttons -->
     <string name="title_activity_pull1">Pull 1</string>
     <string name="title_activity_pull2">Pull 2</string>
     <string name="title_activity_push1">Push 1</string>
     <string name="title_activity_push2">Push 2</string>
+    <string name="title_activity_prefs">Push 2</string>
 
     <!-- Exercise day -->
     <string name="Pull_1">Pull 1</string>
