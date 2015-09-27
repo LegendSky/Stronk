@@ -6,6 +6,7 @@ import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -44,6 +45,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnPush1.setOnClickListener(this);
         btnPush2.setOnClickListener(this);
         btnPrefs.setOnClickListener(this);
+
+        PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
     }
 
     /**

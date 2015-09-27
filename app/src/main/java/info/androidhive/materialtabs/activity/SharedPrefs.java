@@ -1,6 +1,7 @@
 package info.androidhive.materialtabs.activity;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -17,16 +18,10 @@ import info.androidhive.materialtabs.R;
 public class SharedPrefs extends Activity implements View.OnClickListener {
 
     private EditText sharedData;
-    private TextView dataResults;
+    private TextView textView;
 
-    private TextView textView2;
-
-
-    private static String fileName = "Shared Preferences";
+    //private static String fileName = "Shared Preferences";
     private static SharedPreferences sharedPreferences;
-
-    public static int intensity1;
-    public static int weightDeadlift;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,22 +29,24 @@ public class SharedPrefs extends Activity implements View.OnClickListener {
         setContentView(R.layout.shared_preferences);
         setupVariables();
 
-        textView2 = (TextView) findViewById(R.id.textView2);
-
-        sharedPreferences = getSharedPreferences(fileName, 0);
+        //sharedPreferences = getSharedPreferences(fileName, 0);
+        sharedPreferences = getSharedPreferences("preferences", Context.MODE_PRIVATE);
+        //sharedPreferences = getSharedPreferences("preferences", Activity.MODE_PRIVATE);
+        //sharedPreferences = PreferenceManager.getDefaultSharedPreferences(fileName);
     }
 
     private void setupVariables() {
         Button save = (Button) findViewById(R.id.btnSave);
         Button load = (Button) findViewById(R.id.btnLoad);
         sharedData = (EditText) findViewById(R.id.editText);
-        dataResults = (TextView) findViewById(R.id.textView);
+        textView = (TextView) findViewById(R.id.textView);
         save.setOnClickListener(this);
         load.setOnClickListener(this);
     }
 
     public static void setWeightDeadlift(int number) {
         SharedPreferences.Editor editor = sharedPreferences.edit();
+        //editor.clear();
         editor.putInt("deadlift", number);
         editor.commit();
     }
@@ -62,24 +59,18 @@ public class SharedPrefs extends Activity implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btnSave:
-                //String stringData = sharedData.getText().toString();
-                //int intData = Integer.parseInt(sharedData.getText().toString());
-                //SharedPreferences.Editor editor = sharedPreferences.edit();
-                //editor.putString("shared preferences string", stringData);
-                //editor.putInt("weight", intData);
-
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 int input = Integer.parseInt(sharedData.getText().toString());
+                //editor.clear();
                 editor.putInt("deadlift", input);
                 editor.commit();
-
-                textView2.setText("Deadlift: " + getWeightDeadlift());
+                textView.setText("Deadlift: " + getWeightDeadlift());
                 break;
 
             case R.id.btnLoad:
-                sharedPreferences = getSharedPreferences(fileName, 0);
-                String dataReturned = sharedPreferences.getString("shared preferences string", "Couldn't load data");
-                dataResults.setText(dataReturned);
+                //sharedPreferences = getSharedPreferences(fileName, 0);
+                String dataReturned = sharedPreferences.getString("preferences", "Couldn't load data");
+                textView.setText(dataReturned);
                 break;
         }
     }
