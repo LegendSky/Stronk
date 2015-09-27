@@ -35,6 +35,10 @@ public class SharedPrefs extends Activity implements View.OnClickListener {
         //sharedPreferences = PreferenceManager.getDefaultSharedPreferences(fileName);
     }
 
+    public void load(View view) {
+        sharedPreferences = getSharedPreferences("preferences", Context.MODE_PRIVATE);
+    }
+
     private void setupVariables() {
         Button save = (Button) findViewById(R.id.btnSave);
         Button load = (Button) findViewById(R.id.btnLoad);
@@ -44,7 +48,7 @@ public class SharedPrefs extends Activity implements View.OnClickListener {
         load.setOnClickListener(this);
     }
 
-    public static void setWeightDeadlift(int number) {
+    public static void setWeightDeadlift(SharedPreferences preferences, int number) {
         SharedPreferences.Editor editor = sharedPreferences.edit();
         //editor.clear();
         editor.putInt("deadlift", number);

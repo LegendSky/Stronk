@@ -1,6 +1,8 @@
 package info.androidhive.materialtabs.fragments.pull1;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -46,7 +48,8 @@ public class Pull1Other extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        SharedPrefs.setWeightDeadlift(Integer.parseInt(editText.getText().toString()));
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
+        SharedPrefs.setWeightDeadlift(preferences, Integer.parseInt(editText.getText().toString()));
         textView.setText("Deadlift: " + SharedPrefs.getWeightDeadlift());
         System.out.println(SharedPrefs.getWeightDeadlift());
     }

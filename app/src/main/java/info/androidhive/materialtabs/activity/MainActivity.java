@@ -1,5 +1,6 @@
 package info.androidhive.materialtabs.activity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.media.Ringtone;
@@ -46,7 +47,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnPush2.setOnClickListener(this);
         btnPrefs.setOnClickListener(this);
 
-        PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
+        //initPreferences();
+    }
+
+    public void initPreferences() {
+        SharedPreferences sharedPreferences = getSharedPreferences("preference", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putInt("deadlift", 1);
+        editor.commit();
+        System.out.println("Added 1 to deadlift");
     }
 
     /**
