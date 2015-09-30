@@ -76,12 +76,12 @@ public class Pull2Workout extends Fragment {
         row3cb1.setOnClickListener(new CheckBoxListener(row3cb1, ringtone, chronometer));
         row3cb2.setOnClickListener(new CheckBoxListener(row3cb2, ringtone, chronometer));
         row3cb3.setOnClickListener(new CheckBoxListener(row3cb3, ringtone, chronometer));
-        row2cb3.setOnClickListener(new CheckBoxListener(row3cb4, ringtone, chronometer));
+        row3cb4.setOnClickListener(new CheckBoxListener(row3cb4, ringtone, chronometer));
 
         row4cb1.setOnClickListener(new CheckBoxListener(row4cb1, ringtone, chronometer));
         row4cb2.setOnClickListener(new CheckBoxListener(row4cb2, ringtone, chronometer));
         row4cb3.setOnClickListener(new CheckBoxListener(row4cb3, ringtone, chronometer));
-        row2cb3.setOnClickListener(new CheckBoxListener(row4cb4, ringtone, chronometer));
+        row4cb4.setOnClickListener(new CheckBoxListener(row4cb4, ringtone, chronometer));
 
         return view;
     }
