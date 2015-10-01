@@ -20,61 +20,51 @@ public class SharedPrefs extends Activity implements View.OnClickListener {
     private EditText sharedData;
     private TextView textView;
 
-    //private static String fileName = "Shared Preferences";
-    private static SharedPreferences sharedPreferences;
+    private static String fileName = "preferences";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.shared_preferences);
         setupVariables();
-
-        //sharedPreferences = getSharedPreferences(fileName, 0);
-        sharedPreferences = getSharedPreferences("preferences", Context.MODE_PRIVATE);
-        //sharedPreferences = getSharedPreferences("preferences", Activity.MODE_PRIVATE);
-        //sharedPreferences = PreferenceManager.getDefaultSharedPreferences(fileName);
-    }
-
-    public void load(View view) {
-        sharedPreferences = getSharedPreferences("preferences", Context.MODE_PRIVATE);
     }
 
     private void setupVariables() {
         Button save = (Button) findViewById(R.id.btnSave);
         Button load = (Button) findViewById(R.id.btnLoad);
         sharedData = (EditText) findViewById(R.id.editText);
-        textView = (TextView) findViewById(R.id.textView);
+        textView = (TextView) findViewById(R.id.tvDeadliftWeight);
         save.setOnClickListener(this);
         load.setOnClickListener(this);
     }
 
-    public static void setWeightDeadlift(SharedPreferences preferences, int number) {
+    public static void setWeightDeadlift(Context context, int number) {
+        SharedPreferences sharedPreferences = context.getSharedPreferences(fileName, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
-        //editor.clear();
         editor.putInt("deadlift", number);
         editor.commit();
     }
 
-    public static int getWeightDeadlift() {
+    public static int getWeightDeadlift(Context context) {
+        SharedPreferences sharedPreferences = context.getSharedPreferences(fileName, Context.MODE_PRIVATE);
         return sharedPreferences.getInt("deadlift", 0);
     }
 
+    // TODO: Stop crash.
     @Override
     public void onClick(View v) {
+        SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences(fileName, Context.MODE_PRIVATE);
         switch (v.getId()) {
             case R.id.btnSave:
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 int input = Integer.parseInt(sharedData.getText().toString());
-                //editor.clear();
                 editor.putInt("deadlift", input);
                 editor.commit();
-                textView.setText("Deadlift: " + getWeightDeadlift());
+                textView.setText(getWeightDeadlift(getApplicationContext()));
                 break;
 
             case R.id.btnLoad:
-                //sharedPreferences = getSharedPreferences(fileName, 0);
-                String dataReturned = sharedPreferences.getString("preferences", "Couldn't load data");
-                textView.setText(dataReturned);
+                textView.setText(sharedPreferences.getInt("deadlift", 0));
                 break;
         }
     }

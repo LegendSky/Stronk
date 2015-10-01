@@ -20,8 +20,15 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/view_deadlift"
+        android:id="@+id/tvDeadlift"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="-"
-        android:id="@+id/textView"
+        android:id="@+id/tvDeadliftWeight"
         android:layout_gravity="center_horizontal" />
 
     <EditText
@@ -29,12 +36,5 @@
         android:layout_height="wrap_content"
         android:id="@+id/editText"
         android:inputType="number" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Text"
-        android:id="@+id/textView2"
-        android:layout_gravity="center_horizontal" />
 
 </LinearLayout>

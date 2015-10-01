@@ -1,5 +1,6 @@
 package com.android.stronk.fragments.pull1;
 
+import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -43,15 +44,15 @@ public class Pull1Other extends Fragment implements View.OnClickListener {
         editText = (EditText) view.findViewById(R.id.etWeight);
         textView = (TextView) view.findViewById(R.id.tvWeight);
 
-        textView.setText("deadlift: " + SharedPrefs.getWeightDeadlift());
+        SharedPreferences sharedPreferences = getContext().getSharedPreferences("preferences", Context.MODE_PRIVATE);
+        textView.setText("Deadlift: " + sharedPreferences.getInt("deadlift", 0));
         return view;
     }
 
     @Override
     public void onClick(View v) {
-        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
-        SharedPrefs.setWeightDeadlift(preferences, Integer.parseInt(editText.getText().toString()));
-        textView.setText("Deadlift: " + SharedPrefs.getWeightDeadlift());
-        System.out.println(SharedPrefs.getWeightDeadlift());
+        SharedPreferences sharedPreferences = getContext().getSharedPreferences("preferences", Context.MODE_PRIVATE);
+        SharedPrefs.setWeightDeadlift(getContext(), Integer.parseInt(editText.getText().toString()));
+        textView.setText("Deadlift: " + SharedPrefs.getWeightDeadlift(getContext()));
     }
 }

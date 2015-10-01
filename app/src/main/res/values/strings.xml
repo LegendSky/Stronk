@@ -52,4 +52,7 @@
     <string name="Set4">Set4</string>
     <string name="Set5">Set5</string>
     <string name="WarmUpRest">Warm Up(3 min rest)</string>
+
+    <!-- Preference textviews -->
+    <string name="view_deadlift">Deadlift: </string>
 </resources>
