@@ -14,4 +14,9 @@
     <!-- Workout layout dimensions -->
     <dimen name="workout_margin_left">20dp</dimen>
 
+    <!-- Weight margin left dimensions -->
+    <dimen name="weight_margin_left">20dp</dimen>
+    <dimen name="kg_margin_left">5dp</dimen>
+    <dimen name="save_button_margin_right">20dp</dimen>
+
 </resources>

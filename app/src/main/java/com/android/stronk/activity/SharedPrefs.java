@@ -19,7 +19,12 @@ public class SharedPrefs extends Activity implements View.OnClickListener {
     private EditText editText;
     private TextView tvDeadliftWeight;
 
-    public static final String fileName = "preferences";
+    public static final String FILE_NAME = "preferences";
+
+    public static final String DEADLIFT_PREF = "deadlift";
+    public static final String PULLUP_PREF = "pullup";
+    public static final String HAMMERCURL_PREF = "hammercurl";
+    public static final String DBCURL_PREF = "dbcurl";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,35 +43,64 @@ public class SharedPrefs extends Activity implements View.OnClickListener {
     }
 
     public static void setWeightDeadlift(Context context, int number) {
-        SharedPreferences sharedPreferences = context.getSharedPreferences(fileName, Context.MODE_PRIVATE);
+        SharedPreferences sharedPreferences = context.getSharedPreferences(FILE_NAME, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putInt("deadlift", number);
+        editor.putInt(DEADLIFT_PREF, number);
+        editor.commit();
+    }
+
+    public static void setWeightPullUp(Context context, int number) {
+        SharedPreferences sharedPreferences = context.getSharedPreferences(FILE_NAME, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putInt(PULLUP_PREF, number);
+        editor.commit();
+    }
+
+    public static void setWeightHammerCurl(Context context, int number) {
+        SharedPreferences sharedPreferences = context.getSharedPreferences(FILE_NAME, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putInt(HAMMERCURL_PREF, number);
+        editor.commit();
+    }
+
+    public static void setWeightDBCurl(Context context, int number) {
+        SharedPreferences sharedPreferences = context.getSharedPreferences(FILE_NAME, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putInt(DBCURL_PREF, number);
         editor.commit();
     }
 
     public static int getWeightDeadlift(Context context) {
-        SharedPreferences sharedPreferences = context.getSharedPreferences(fileName, Context.MODE_PRIVATE);
-        return sharedPreferences.getInt("deadlift", 0);
+        SharedPreferences sharedPreferences = context.getSharedPreferences(FILE_NAME, Context.MODE_PRIVATE);
+        return sharedPreferences.getInt(DEADLIFT_PREF, 0);
+    }
+
+    public static int getWeightPullUp(Context context) {
+        SharedPreferences sharedPreferences = context.getSharedPreferences(FILE_NAME, Context.MODE_PRIVATE);
+        return sharedPreferences.getInt(PULLUP_PREF, 0);
+    }
+
+    public static int getWeightHammerCurl(Context context) {
+        SharedPreferences sharedPreferences = context.getSharedPreferences(FILE_NAME, Context.MODE_PRIVATE);
+        return sharedPreferences.getInt(HAMMERCURL_PREF, 0);
+    }
+
+    public static int getWeightDBCurl(Context context) {
+        SharedPreferences sharedPreferences = context.getSharedPreferences(FILE_NAME, Context.MODE_PRIVATE);
+        return sharedPreferences.getInt(DBCURL_PREF, 0);
     }
 
     @Override
     public void onClick(View v) {
-        SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences(fileName, Context.MODE_PRIVATE);
         switch (v.getId()) {
             case R.id.btnSave:
-                SharedPreferences.Editor editor = sharedPreferences.edit();
                 try {
                     int input = Integer.parseInt(editText.getText().toString());
-                    editor.putInt("deadlift", input);
-                } catch (NumberFormatException  e){
-
+                    setWeightDeadlift(this, input);
+                } catch (NumberFormatException e) {
+                    // Invalid number.
                 }
-                editor.commit();
-                tvDeadliftWeight.setText(Integer.toString(getWeightDeadlift(this)));
-                break;
-
-            case R.id.btnLoad:
-                tvDeadliftWeight.setText(Integer.toString(getWeightDeadlift(this)));
+                tvDeadliftWeight.setText(getWeightDeadlift(this));
                 break;
         }
     }

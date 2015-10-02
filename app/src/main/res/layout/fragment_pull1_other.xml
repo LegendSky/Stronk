@@ -4,33 +4,172 @@
     android:layout_height="match_parent"
     tools:context="info.androidhive.stronk.fragments.OneFragment">
 
+    <!-- Deadlift row -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/other"
-        android:textSize="40dp"
-        android:textStyle="bold"
-        android:id="@+id/tvWeight"
-        android:layout_below="@+id/etWeight"
-        android:layout_centerHorizontal="true" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/view_deadlift"
+        android:id="@+id/tvDeadlift"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:ems="10"
-        android:id="@+id/etWeight"
-        android:layout_marginTop="229dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/etDeadlift"
+        android:layout_alignBottom="@+id/tvDeadlift"
+        android:layout_toLeftOf="@+id/tvDeadliftKG"
+        android:layout_marginBottom="-5dp"
+        android:width="50dp"
+        android:imeOptions="actionDone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/kg"
+        android:id="@+id/tvDeadliftKG"
+        android:layout_alignTop="@+id/tvDeadlift"
+        android:layout_toLeftOf="@+id/btnSaveDeadlifts"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Save"
-        android:id="@+id/btnSave"
-        android:layout_below="@+id/tvWeight"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="43dp" />
+        android:text="@string/save"
+        android:id="@+id/btnSaveDeadlifts"
+        android:layout_alignBottom="@+id/tvDeadlift"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/etDeadlift"
+        android:layout_marginRight="@dimen/save_button_margin_right"/>
+
+    <!-- Pull Ups row -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/view_pullup"
+        android:id="@+id/tvPullUps"
+        android:layout_alignLeft="@+id/tvDeadlift"
+        android:layout_below="@id/tvDeadlift"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/etPullUps"
+        android:layout_alignBottom="@+id/tvPullUps"
+        android:layout_toLeftOf="@+id/tvPullUpsKG"
+        android:layout_marginBottom="-5dp"
+        android:width="50dp"
+        android:imeOptions="actionDone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/kg"
+        android:id="@+id/tvPullUpsKG"
+        android:layout_alignTop="@+id/tvPullUps"
+        android:layout_toLeftOf="@+id/btnSavePullUps"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:id="@+id/btnSavePullUps"
+        android:layout_alignBottom="@+id/tvPullUps"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/etPullUps"
+        android:layout_marginRight="@dimen/save_button_margin_right"/>
+
+    <!-- Hammer curls row -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/view_hammer_curl"
+        android:id="@+id/tvHammerCurls"
+        android:layout_alignLeft="@+id/tvDeadlift"
+        android:layout_below="@id/tvPullUps"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/etHammerCurls"
+        android:layout_alignBottom="@+id/tvHammerCurls"
+        android:layout_toLeftOf="@+id/tvHammerCurlsKG"
+        android:layout_marginBottom="-5dp"
+        android:width="50dp"
+        android:imeOptions="actionDone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/kg"
+        android:id="@+id/tvHammerCurlsKG"
+        android:layout_alignTop="@+id/tvHammerCurls"
+        android:layout_toLeftOf="@+id/btnSaveHammerCurls"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:id="@+id/btnSaveHammerCurls"
+        android:layout_alignBottom="@+id/tvHammerCurls"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/etHammerCurls"
+        android:layout_marginRight="@dimen/save_button_margin_right"/>
+
+    <!-- DB curls row -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/view_db_curl"
+        android:id="@+id/tvDBCurls"
+        android:layout_alignLeft="@+id/tvDeadlift"
+        android:layout_below="@id/tvHammerCurls"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/etDBCurls"
+        android:layout_alignBottom="@+id/tvDBCurls"
+        android:layout_toLeftOf="@+id/tvDBCurlsKG"
+        android:layout_marginBottom="-5dp"
+        android:width="50dp"
+        android:imeOptions="actionDone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/kg"
+        android:id="@+id/tvDBCurlsKG"
+        android:layout_alignTop="@+id/tvDBCurls"
+        android:layout_toLeftOf="@+id/btnSaveDBCurls"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:id="@+id/btnSaveDBCurls"
+        android:layout_alignBottom="@+id/tvDBCurls"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/etDBCurls"
+        android:layout_marginRight="@dimen/save_button_margin_right"/>
 
 </RelativeLayout>

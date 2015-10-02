@@ -55,4 +55,11 @@
 
     <!-- Preference textviews -->
     <string name="view_deadlift">Deadlift: </string>
+    <string name="view_pullup">Pull Up: </string>
+    <string name="view_hammer_curl">Hammer Curl: </string>
+    <string name="view_db_curl">DB Curl: </string>
+    <string name="kg">KG</string>
+    <string name="save">Save</string>
+
+
 </resources>

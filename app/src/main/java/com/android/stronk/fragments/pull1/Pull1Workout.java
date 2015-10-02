@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.Chronometer;
+import android.widget.TextView;
 
 import info.androidhive.stronk.R;
 import com.android.stronk.activity.CheckBoxListener;
