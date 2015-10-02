@@ -40,18 +40,15 @@ public class Pull1Other extends Fragment implements View.OnClickListener {
 
         btnSave = (Button) view.findViewById(R.id.btnSave);
         btnSave.setOnClickListener(this);
-
         editText = (EditText) view.findViewById(R.id.etWeight);
         textView = (TextView) view.findViewById(R.id.tvWeight);
 
-        SharedPreferences sharedPreferences = getContext().getSharedPreferences("preferences", Context.MODE_PRIVATE);
-        textView.setText("Deadlift: " + sharedPreferences.getInt("deadlift", 0));
+        textView.setText("Deadlift: " + SharedPrefs.getWeightDeadlift(getContext()));
         return view;
     }
 
     @Override
     public void onClick(View v) {
-        SharedPreferences sharedPreferences = getContext().getSharedPreferences("preferences", Context.MODE_PRIVATE);
         SharedPrefs.setWeightDeadlift(getContext(), Integer.parseInt(editText.getText().toString()));
         textView.setText("Deadlift: " + SharedPrefs.getWeightDeadlift(getContext()));
     }

@@ -12,15 +12,14 @@ import android.widget.TextView;
 import info.androidhive.stronk.R;
 
 /**
- * Preference file, not used as of yet.
  * Created by Simin on 26-9-2015.
  */
 public class SharedPrefs extends Activity implements View.OnClickListener {
 
-    private EditText sharedData;
-    private TextView textView;
+    private EditText editText;
+    private TextView tvDeadliftWeight;
 
-    private static String fileName = "preferences";
+    public static final String fileName = "preferences";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,8 +31,8 @@ public class SharedPrefs extends Activity implements View.OnClickListener {
     private void setupVariables() {
         Button save = (Button) findViewById(R.id.btnSave);
         Button load = (Button) findViewById(R.id.btnLoad);
-        sharedData = (EditText) findViewById(R.id.editText);
-        textView = (TextView) findViewById(R.id.tvDeadliftWeight);
+        editText = (EditText) findViewById(R.id.editText);
+        tvDeadliftWeight = (TextView) findViewById(R.id.tvDeadliftWeight);
         save.setOnClickListener(this);
         load.setOnClickListener(this);
     }
@@ -50,21 +49,24 @@ public class SharedPrefs extends Activity implements View.OnClickListener {
         return sharedPreferences.getInt("deadlift", 0);
     }
 
-    // TODO: Stop crash.
     @Override
     public void onClick(View v) {
         SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences(fileName, Context.MODE_PRIVATE);
         switch (v.getId()) {
             case R.id.btnSave:
                 SharedPreferences.Editor editor = sharedPreferences.edit();
-                int input = Integer.parseInt(sharedData.getText().toString());
-                editor.putInt("deadlift", input);
+                try {
+                    int input = Integer.parseInt(editText.getText().toString());
+                    editor.putInt("deadlift", input);
+                } catch (NumberFormatException  e){
+
+                }
                 editor.commit();
-                textView.setText(getWeightDeadlift(getApplicationContext()));
+                tvDeadliftWeight.setText(Integer.toString(getWeightDeadlift(this)));
                 break;
 
             case R.id.btnLoad:
-                textView.setText(sharedPreferences.getInt("deadlift", 0));
+                tvDeadliftWeight.setText(Integer.toString(getWeightDeadlift(this)));
                 break;
         }
     }
