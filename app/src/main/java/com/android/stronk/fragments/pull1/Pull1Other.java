@@ -52,51 +52,53 @@ public class Pull1Other extends Fragment implements View.OnClickListener {
         etHammerCurls = (EditText) view.findViewById(R.id.etHammerCurls);
         etDBCurls = (EditText) view.findViewById(R.id.etDBCurls);
 
-        etDeadlift.setText(Integer.toString(SharedPrefs.getWeightDeadlift(getContext())));
-        etPullUps.setText(Integer.toString(SharedPrefs.getWeightPullUp(getContext())));
-        etHammerCurls.setText(Integer.toString(SharedPrefs.getWeightHammerCurl(getContext())));
-        etDBCurls.setText(Integer.toString(SharedPrefs.getWeightDBCurl(getContext())));
+        try {
+            etDeadlift.setText(Double.toString(SharedPrefs.getWeightDeadlift(getContext())));
+            etPullUps.setText(Double.toString(SharedPrefs.getWeightPullUp(getContext())));
+            etHammerCurls.setText(Double.toString(SharedPrefs.getWeightHammerCurl(getContext())));
+            etDBCurls.setText(Double.toString(SharedPrefs.getWeightDBCurl(getContext())));
+        } catch (Exception e) {
+            // Invalid number saved in prefs.
+        }
+
         return view;
     }
 
     @Override
     public void onClick(View v) {
-        System.out.println("yo");
-        switch (getId()) {
+        switch (v.getId()) {
             case R.id.btnSaveDeadlifts:
                 try {
-                    int deadliftWeight = Integer.parseInt(etDeadlift.getText().toString());
+                    double deadliftWeight = Double.parseDouble(etDeadlift.getText().toString());
                     SharedPrefs.setWeightDeadlift(getContext(), deadliftWeight);
-                    System.out.println("yo1000");
-                } catch (Exception e) {
+                } catch (NumberFormatException e) {
                     // Input is not a number.
                 }
-                System.out.println("yo2");
                 break;
 
             case R.id.btnSavePullUps:
                 try {
-                    int pullupWeight = Integer.parseInt(etPullUps.getText().toString());
+                    double pullupWeight = Double.parseDouble(etPullUps.getText().toString());
                     SharedPrefs.setWeightPullUp(getContext(), pullupWeight);
-                } catch (Exception e) {
+                } catch (NumberFormatException e) {
                     // Input is not a number.
                 }
                 break;
 
             case R.id.btnSaveHammerCurls:
                 try {
-                    int hammercurlWeight = Integer.parseInt(etHammerCurls.getText().toString());
+                    double hammercurlWeight = Double.parseDouble(etHammerCurls.getText().toString());
                     SharedPrefs.setWeightHammerCurl(getContext(), hammercurlWeight);
-                } catch (Exception e) {
+                } catch (NumberFormatException e) {
                     // Input is not a number.
                 }
                 break;
 
             case R.id.btnSaveDBCurls:
                 try {
-                    int dbcurlWeight = Integer.parseInt(etDBCurls.getText().toString());
+                    double dbcurlWeight = Double.parseDouble(etDBCurls.getText().toString());
                     SharedPrefs.setWeightDBCurl(getContext(), dbcurlWeight);
-                } catch (Exception e) {
+                } catch (NumberFormatException e) {
                     // Input is not a number.
                 }
                 break;

@@ -45,8 +45,8 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.android.stronk.activity.SharedPrefs"
-            android:label="@string/title_activity_prefs"
+            android:name="com.android.stronk.activity.Progress"
+            android:label="@string/title_activity_progress"
             android:parentActivityName="com.android.stronk.activity.MainActivity"
             android:screenOrientation="portrait" >
         </activity>

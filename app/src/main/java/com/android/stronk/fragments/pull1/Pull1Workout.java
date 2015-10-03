@@ -15,9 +15,6 @@ import android.widget.TextView;
 import info.androidhive.stronk.R;
 import com.android.stronk.activity.CheckBoxListener;
 
-/**
- * @author Simin
- */
 public class Pull1Workout extends Fragment {
 
     public Pull1Workout() {

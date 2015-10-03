@@ -6,9 +6,6 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.Chronometer;
 
-/**
- * Created by Simin on 26-9-2015.
- */
 public class CheckBoxListener implements View.OnClickListener {
     private CheckBox checkBox;
     private Chronometer chronometer;

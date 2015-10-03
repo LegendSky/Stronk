@@ -52,10 +52,10 @@
             android:textSize="@dimen/activity_button_text_size" />
 
         <Button
-            android:id="@+id/btnPrefs"
+            android:id="@+id/btnProgress"
             android:layout_width="fill_parent"
             android:layout_height="@dimen/activity_button_height"
-            android:text="@string/prefs"
+            android:text="@string/title_activity_progress"
             android:textSize="@dimen/activity_button_text_size" />
 
     </LinearLayout>
