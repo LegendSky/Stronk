@@ -10,8 +10,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.Chronometer;
+import android.widget.TextView;
 
 import com.android.stronk.activity.CheckBoxListener;
+import com.android.stronk.activity.SharedPrefs;
 
 import info.androidhive.stronk.R;
 
@@ -33,6 +35,16 @@ public class Push1Workout extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_push1_workout,
                 container, false);
+
+        TextView tvBenchPressWeight = (TextView) view.findViewById(R.id.tvBenchPressWeight);
+        TextView tvOHPressWeight = (TextView) view.findViewById(R.id.tvOHPressWeight);
+        TextView tvInclineDBWeight = (TextView) view.findViewById(R.id.tvInclineDBPressWeight);
+        TextView tvOHLatWeight = (TextView) view.findViewById(R.id.tvOHLatWeight);
+
+        tvBenchPressWeight.setText(Double.toString(SharedPrefs.getWeightBenchPress(getContext())));
+        tvOHPressWeight.setText(Double.toString(SharedPrefs.getWeightOHPress(getContext())));
+        tvInclineDBWeight.setText(Double.toString(SharedPrefs.getWeightInclineDB(getContext())));
+        tvOHLatWeight.setText(Double.toString(SharedPrefs.getWeightOHLat(getContext())));
 
         // Chronometer.
         Chronometer chronometer = (Chronometer) view.findViewById(R.id.chronometer);

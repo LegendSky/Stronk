@@ -57,8 +57,15 @@
     <string name="view_pullup">Pull Up: </string>
     <string name="view_hammer_curl">Hammer Curl: </string>
     <string name="view_db_curl">DB Curl: </string>
+
+    <string name="view_bench_press">Bench Press: </string>
+    <string name="view_oh_press">OH Press: </string>
+    <string name="view_incline_db">Incline DB: </string>
+    <string name="view_oh_triceps_ss_lat_raises">OH SS Lat: </string>
+
     <string name="kg">KG</string>
     <string name="save">Save</string>
+    <string name="start_weight">0</string>
 
 
 </resources>

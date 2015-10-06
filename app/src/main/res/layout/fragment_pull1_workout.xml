@@ -239,7 +239,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="0"
-        android:id="@+id/tvPullUpsWeight"
+        android:id="@+id/tvPullUpWeight"
         android:layout_alignTop="@+id/row2intensity"
         android:layout_toRightOf="@+id/row2intensity"
         android:layout_marginLeft="@dimen/weight_margin_left" />
@@ -280,9 +280,9 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="KG"
-        android:id="@+id/tvPullUpsKG"
+        android:id="@+id/tvPullUpKG"
         android:layout_alignTop="@+id/row2intensity"
-        android:layout_toRightOf="@+id/tvPullUpsWeight"
+        android:layout_toRightOf="@+id/tvPullUpWeight"
         android:layout_marginLeft="@dimen/kg_margin_left" />
 
     <TextView

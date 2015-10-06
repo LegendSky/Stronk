@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import info.androidhive.stronk.R;
 import com.android.stronk.activity.CheckBoxListener;
+import com.android.stronk.activity.SharedPrefs;
 
 public class Pull1Workout extends Fragment {
 
@@ -32,6 +33,16 @@ public class Pull1Workout extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_pull1_workout,
                 container, false);
+
+        TextView tvDeadliftWeight = (TextView) view.findViewById(R.id.tvDeadliftWeight);
+        TextView tvPullupWeight = (TextView) view.findViewById(R.id.tvPullUpWeight);
+        TextView tvHammercurlWeight = (TextView) view.findViewById(R.id.tvHammerCurlsWeight);
+        TextView tvDBCurlWeight = (TextView) view.findViewById(R.id.tvDBCurlsWeight);
+
+        tvDeadliftWeight.setText(Double.toString(SharedPrefs.getWeightDeadlift(getContext())));
+        tvPullupWeight.setText(Double.toString(SharedPrefs.getWeightPullUp(getContext())));
+        tvHammercurlWeight.setText(Double.toString(SharedPrefs.getWeightHammerCurl(getContext())));
+        tvDBCurlWeight.setText(Double.toString(SharedPrefs.getWeightDBCurl(getContext())));
 
         // Chronometer.
         Chronometer chronometer = (Chronometer) view.findViewById(R.id.chronometer);

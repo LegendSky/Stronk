@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import info.androidhive.stronk.R;
-import com.android.stronk.fragments.pull2.Pull2Other;
+import com.android.stronk.fragments.pull2.Pull2Weight;
 import com.android.stronk.fragments.pull2.Pull2WarmUp;
 import com.android.stronk.fragments.pull2.Pull2Workout;
 
@@ -51,7 +51,7 @@ public class Pull2Activity extends AppCompatActivity {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new Pull2Workout(), "Workout");
         adapter.addFragment(new Pull2WarmUp(), "Warm up");
-        adapter.addFragment(new Pull2Other(), "Other");
+        adapter.addFragment(new Pull2Weight(), "Other");
         viewPager.setAdapter(adapter);
     }
 
