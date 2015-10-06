@@ -162,7 +162,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/OH_Triceps_SS_Lat_Raises"
+        android:text="@string/OH_Lat"
         android:id="@+id/Title4"
         android:layout_below="@+id/row3checkBox1"
         android:layout_alignParentLeft="true"

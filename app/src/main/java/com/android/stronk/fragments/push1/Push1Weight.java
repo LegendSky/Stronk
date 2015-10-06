@@ -85,7 +85,7 @@ public class Push1Weight extends Fragment implements View.OnClickListener {
                 }
                 break;
 
-            case R.id.btnSaveHammerCurls:
+            case R.id.btnSaveInclineDBPress:
                 try {
                     double inclineDBWeight = Double.parseDouble(etInclineDBPress.getText().toString());
                     SharedPrefs.setWeightInclineDBPress(getContext(), inclineDBWeight);

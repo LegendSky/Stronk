@@ -52,7 +52,7 @@ public class Push1Activity extends AppCompatActivity {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new Push1Workout(), "Workout");
         adapter.addFragment(new Push1WarmUp(), "Warm up");
-        adapter.addFragment(new Push1Weight(), "Other");
+        adapter.addFragment(new Push1Weight(), "Weight");
         viewPager.setAdapter(adapter);
     }
 
