@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import info.androidhive.stronk.R;
-import com.android.stronk.fragments.push1.Push1Other;
+import com.android.stronk.fragments.push1.Push1Weight;
 import com.android.stronk.fragments.push1.Push1Workout;
 
 public class Push1Activity extends AppCompatActivity {
@@ -52,7 +52,7 @@ public class Push1Activity extends AppCompatActivity {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new Push1Workout(), "Workout");
         adapter.addFragment(new Push1WarmUp(), "Warm up");
-        adapter.addFragment(new Push1Other(), "Other");
+        adapter.addFragment(new Push1Weight(), "Other");
         viewPager.setAdapter(adapter);
     }
 

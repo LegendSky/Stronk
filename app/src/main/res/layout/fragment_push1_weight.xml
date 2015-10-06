@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     tools:context="info.androidhive.stronk.fragments.OneFragment">
 
-    <!-- Deadlift row -->
+    <!-- BenchPress row -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -15,15 +15,17 @@
         android:layout_marginLeft="40dp"
         android:layout_marginStart="40dp" />
 
-    <TextView
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/start_weight"
-        android:id="@+id/tvBenchPressWeight"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/etBenchPress"
         android:layout_alignBottom="@+id/tvBenchPress"
-        android:layout_toRightOf="@+id/tvBenchPress"
-        android:layout_marginLeft="@dimen/weight_margin_left"/>
+        android:layout_toLeftOf="@+id/tvBenchPressKG"
+        android:layout_marginBottom="-5dp"
+        android:width="50dp"
+        android:imeOptions="actionDone" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -32,8 +34,17 @@
         android:text="@string/kg"
         android:id="@+id/tvBenchPressKG"
         android:layout_alignTop="@+id/tvBenchPress"
-        android:layout_toRightOf="@+id/tvBenchPressWeight"
-        android:layout_marginLeft="@dimen/kg_margin_left" />
+        android:layout_toLeftOf="@+id/btnSaveBenchPress"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:id="@+id/btnSaveBenchPress"
+        android:layout_alignBottom="@+id/tvBenchPress"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/etBenchPress"
+        android:layout_marginRight="@dimen/save_button_margin_right"/>
 
     <!-- Pull Ups row -->
     <TextView
@@ -46,15 +57,17 @@
         android:layout_below="@id/tvBenchPress"
         android:layout_marginTop="40dp"/>
 
-    <TextView
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/start_weight"
-        android:id="@+id/tvOHPressWeight"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/etOHPress"
         android:layout_alignBottom="@+id/tvOHPress"
-        android:layout_toRightOf="@+id/tvOHPress"
-        android:layout_marginLeft="@dimen/weight_margin_left"/>
+        android:layout_toLeftOf="@+id/tvOHPressKG"
+        android:layout_marginBottom="-5dp"
+        android:width="50dp"
+        android:imeOptions="actionDone" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -63,8 +76,17 @@
         android:text="@string/kg"
         android:id="@+id/tvOHPressKG"
         android:layout_alignTop="@+id/tvOHPress"
-        android:layout_toRightOf="@+id/tvOHPressWeight"
-        android:layout_marginLeft="@dimen/kg_margin_left" />
+        android:layout_toLeftOf="@+id/btnSaveOHPress"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:id="@+id/btnSaveOHPress"
+        android:layout_alignBottom="@+id/tvOHPress"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/etOHPress"
+        android:layout_marginRight="@dimen/save_button_margin_right"/>
 
     <!-- Hammer curls row -->
     <TextView
@@ -77,15 +99,17 @@
         android:layout_below="@id/tvOHPress"
         android:layout_marginTop="40dp"/>
 
-    <TextView
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/start_weight"
-        android:id="@+id/tvInclineDBPressWeight"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/etInclineDBPress"
         android:layout_alignBottom="@+id/tvInclineDBPress"
-        android:layout_toRightOf="@+id/tvInclineDBPress"
-        android:layout_marginLeft="@dimen/weight_margin_left"/>
+        android:layout_toLeftOf="@+id/tvInclineDBPressKG"
+        android:layout_marginBottom="-5dp"
+        android:width="50dp"
+        android:imeOptions="actionDone" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -94,8 +118,17 @@
         android:text="@string/kg"
         android:id="@+id/tvInclineDBPressKG"
         android:layout_alignTop="@+id/tvInclineDBPress"
-        android:layout_toRightOf="@+id/tvInclineDBPressWeight"
-        android:layout_marginLeft="@dimen/kg_margin_left" />
+        android:layout_toLeftOf="@+id/btnSaveInclineDBPress"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:id="@+id/btnSaveInclineDBPress"
+        android:layout_alignBottom="@+id/tvInclineDBPress"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/etInclineDBPress"
+        android:layout_marginRight="@dimen/save_button_margin_right"/>
 
     <!-- DB curls row -->
     <TextView
@@ -108,15 +141,17 @@
         android:layout_below="@id/tvInclineDBPress"
         android:layout_marginTop="40dp"/>
 
-    <TextView
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/start_weight"
-        android:id="@+id/tvOHLatWeight"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/etOHLat"
         android:layout_alignBottom="@+id/tvOHLat"
-        android:layout_toRightOf="@+id/tvOHLat"
-        android:layout_marginLeft="@dimen/weight_margin_left"/>
+        android:layout_toLeftOf="@+id/tvOHLatKG"
+        android:layout_marginBottom="-5dp"
+        android:width="50dp"
+        android:imeOptions="actionDone" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -125,7 +160,17 @@
         android:text="@string/kg"
         android:id="@+id/tvOHLatKG"
         android:layout_alignTop="@+id/tvOHLat"
-        android:layout_toRightOf="@+id/tvOHLatWeight"
-        android:layout_marginLeft="@dimen/kg_margin_left" />
+        android:layout_toLeftOf="@+id/btnSaveOHLat"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:id="@+id/btnSaveOHLat"
+        android:layout_alignBottom="@+id/tvOHLat"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/etOHLat"
+        android:layout_marginRight="@dimen/save_button_margin_right"/>
 
 </RelativeLayout>
+

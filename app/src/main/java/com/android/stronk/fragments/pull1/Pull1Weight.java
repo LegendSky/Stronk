@@ -15,14 +15,14 @@ import com.android.stronk.activity.SharedPrefs;
 import info.androidhive.stronk.R;
 
 
-public class Pull1Other extends Fragment implements View.OnClickListener {
+public class Pull1Weight extends Fragment implements View.OnClickListener {
 
     private EditText etDeadlift;
     private EditText etPullUps;
     private EditText etHammerCurls;
     private EditText etDBCurls;
 
-    public Pull1Other() {
+    public Pull1Weight() {
         // Required empty public constructor
     }
 
@@ -35,7 +35,7 @@ public class Pull1Other extends Fragment implements View.OnClickListener {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_pull1_other, container, false);
+        View view = inflater.inflate(R.layout.fragment_pull1_weight, container, false);
 
         Button btnSaveDeadlifts = (Button) view.findViewById(R.id.btnSaveDeadlifts);
         Button btnSavePullUps = (Button) view.findViewById(R.id.btnSavePullUps);
