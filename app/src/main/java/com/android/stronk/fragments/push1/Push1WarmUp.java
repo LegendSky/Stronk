@@ -45,9 +45,9 @@ public class Push1WarmUp extends Fragment {
 
     private String getBenchPressWarmUp() {
         String warmup;
-        double weightBenchPress = SharedPrefs.getWeightBenchPress(getContext());
+        double weightBenchPress = SharedPrefs.getWeightBenchPress5x5(getContext());
         if (weightBenchPress < 30)
-            warmup = "No warm up.";
+            warmup = "No warm up";
         else if (weightBenchPress < 40)
             warmup = "(5 x 20) & (5 x 20)";
         else if (weightBenchPress < 50)
@@ -68,9 +68,9 @@ public class Push1WarmUp extends Fragment {
 
     private String getOHPressWarmUp() {
         String warmup;
-        double weightOHPress = SharedPrefs.getWeightOHPress(getContext());
+        double weightOHPress = SharedPrefs.getWeightOHPress5x5(getContext());
         if (weightOHPress < 30)
-            warmup = "No warm up.";
+            warmup = "No warm up";
         else if (weightOHPress < 40)
             warmup = "(5 x 20) & (5 x 20)";
         else if (weightOHPress < 50)

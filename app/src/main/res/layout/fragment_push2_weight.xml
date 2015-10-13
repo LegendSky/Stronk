@@ -4,58 +4,16 @@
     android:layout_height="match_parent"
     tools:context="info.androidhive.stronk.fragments.OneFragment">
 
-    <!-- BenchPress row -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/view_bench_press_5x5"
-        android:id="@+id/tvBenchPress"
-        android:layout_marginTop="60dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginStart="40dp" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:ems="10"
-        android:id="@+id/etBenchPress"
-        android:layout_alignBottom="@+id/tvBenchPress"
-        android:layout_toLeftOf="@+id/tvBenchPressKG"
-        android:layout_marginBottom="-5dp"
-        android:width="50dp"
-        android:imeOptions="actionDone" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/kg"
-        android:id="@+id/tvBenchPressKG"
-        android:layout_alignTop="@+id/tvBenchPress"
-        android:layout_toLeftOf="@+id/btnSaveBenchPress"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/save"
-        android:id="@+id/btnSaveBenchPress"
-        android:layout_alignBottom="@+id/tvBenchPress"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/etBenchPress"
-        android:layout_marginRight="@dimen/save_button_margin_right"/>
-
     <!-- OH Press row -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/view_oh_press_3x8"
+        android:text="@string/view_oh_press_5x5"
         android:id="@+id/tvOHPress"
-        android:layout_alignLeft="@+id/tvBenchPress"
-        android:layout_below="@id/tvBenchPress"
-        android:layout_marginTop="40dp"/>
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="40dp" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -88,6 +46,48 @@
         android:layout_alignTop="@+id/etOHPress"
         android:layout_marginRight="@dimen/save_button_margin_right"/>
 
+    <!-- Bench Press row -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/view_bench_press_3x8"
+        android:id="@+id/tvBenchPress"
+        android:layout_alignLeft="@+id/tvOHPress"
+        android:layout_below="@id/tvOHPress"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/etBenchPress"
+        android:layout_alignBottom="@+id/tvBenchPress"
+        android:layout_toLeftOf="@+id/tvBenchPressKG"
+        android:layout_marginBottom="-5dp"
+        android:width="50dp"
+        android:imeOptions="actionDone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/kg"
+        android:id="@+id/tvBenchPressKG"
+        android:layout_alignTop="@+id/tvBenchPress"
+        android:layout_toLeftOf="@+id/btnSaveBenchPress"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:id="@+id/btnSaveBenchPress"
+        android:layout_alignBottom="@+id/tvBenchPress"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/etBenchPress"
+        android:layout_marginRight="@dimen/save_button_margin_right"/>
+
     <!-- Hammer curls row -->
     <TextView
         android:layout_width="wrap_content"
@@ -95,8 +95,8 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/view_incline_db"
         android:id="@+id/tvInclineDBPress"
-        android:layout_alignLeft="@+id/tvBenchPress"
-        android:layout_below="@id/tvOHPress"
+        android:layout_alignLeft="@+id/tvOHPress"
+        android:layout_below="@id/tvBenchPress"
         android:layout_marginTop="40dp"/>
 
     <EditText

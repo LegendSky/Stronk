@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import info.androidhive.stronk.R;
-import com.android.stronk.fragments.push2.Push2Other;
+import com.android.stronk.fragments.push2.Push2Weight;
 import com.android.stronk.fragments.push2.Push2WarmUp;
 
 public class Push2Activity extends AppCompatActivity {
@@ -52,7 +52,7 @@ public class Push2Activity extends AppCompatActivity {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new Push2Workout(), "Workout");
         adapter.addFragment(new Push2WarmUp(), "Warm up");
-        adapter.addFragment(new Push2Other(), "Other");
+        adapter.addFragment(new Push2Weight(), "Weight");
         viewPager.setAdapter(adapter);
     }
 

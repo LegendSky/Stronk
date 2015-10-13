@@ -17,10 +17,10 @@ import info.androidhive.stronk.R;
 
 public class Pull2Weight extends Fragment implements View.OnClickListener {
 
-    private EditText etBenchPress;
-    private EditText etOHPress;
-    private EditText etInclineDBPress;
-    private EditText etOHLat;
+    private EditText etBBRows;
+    private EditText etPullUps;
+    private EditText etHammerCurls;
+    private EditText etDBCurls;
 
     public Pull2Weight() {
         // Required empty public constructor
@@ -38,26 +38,26 @@ public class Pull2Weight extends Fragment implements View.OnClickListener {
 
         View view = inflater.inflate(R.layout.fragment_pull2_weight, container, false);
 
-        Button btnSaveBenchPress = (Button) view.findViewById(R.id.btnSaveBenchPress);
-        Button btnSaveOHPress = (Button) view.findViewById(R.id.btnSaveOHPress);
-        Button btnSaveInclineDBPress = (Button) view.findViewById(R.id.btnSaveInclineDBPress);
-        Button btnSaveOHLat = (Button) view.findViewById(R.id.btnSaveOHLat);
+        Button btnSaveBBRows = (Button) view.findViewById(R.id.btnSaveBBRows);
+        Button btnSavePullUps = (Button) view.findViewById(R.id.btnSavePullUps);
+        Button btnSaveHammerCurls = (Button) view.findViewById(R.id.btnSaveHammerCurls);
+        Button btnSaveDBCurls = (Button) view.findViewById(R.id.btnSaveDBCurls);
 
-        btnSaveBenchPress.setOnClickListener(this);
-        btnSaveOHPress.setOnClickListener(this);
-        btnSaveInclineDBPress.setOnClickListener(this);
-        btnSaveOHLat.setOnClickListener(this);
+        btnSaveBBRows.setOnClickListener(this);
+        btnSavePullUps.setOnClickListener(this);
+        btnSaveHammerCurls.setOnClickListener(this);
+        btnSaveDBCurls.setOnClickListener(this);
 
-        etBenchPress = (EditText) view.findViewById(R.id.etDeadlift);
-        etOHPress = (EditText) view.findViewById(R.id.etPullUps);
-        etInclineDBPress = (EditText) view.findViewById(R.id.etHammerCurls);
-        etOHLat = (EditText) view.findViewById(R.id.etDBCurls);
+        etBBRows = (EditText) view.findViewById(R.id.etBBRows);
+        etPullUps = (EditText) view.findViewById(R.id.etPullUps);
+        etHammerCurls = (EditText) view.findViewById(R.id.etHammerCurls);
+        etDBCurls = (EditText) view.findViewById(R.id.etDBCurls);
 
         try {
-            etBenchPress.setText(Double.toString(SharedPrefs.getWeightDeadlift(getContext())));
-            etOHPress.setText(Double.toString(SharedPrefs.getWeightPullUp(getContext())));
-            etInclineDBPress.setText(Double.toString(SharedPrefs.getWeightHammerCurl(getContext())));
-            etOHLat.setText(Double.toString(SharedPrefs.getWeightDBCurl(getContext())));
+            etBBRows.setText(Double.toString(SharedPrefs.getWeightBBRow(getContext())));
+            etPullUps.setText(Double.toString(SharedPrefs.getWeightPullUp(getContext())));
+            etHammerCurls.setText(Double.toString(SharedPrefs.getWeightHammerCurl(getContext())));
+            etDBCurls.setText(Double.toString(SharedPrefs.getWeightDBCurl(getContext())));
         } catch (Exception e) {
             // Invalid number saved in prefs.
         }
@@ -68,19 +68,19 @@ public class Pull2Weight extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.btnSaveBenchPress:
+            case R.id.btnSaveBBRows:
                 try {
-                    double benchPressWeight = Double.parseDouble(etBenchPress.getText().toString());
-                    SharedPrefs.setWeightBenchPress(getContext(), benchPressWeight);
+                    double bbrowWeight = Double.parseDouble(etBBRows.getText().toString());
+                    SharedPrefs.setWeightBBRow(getContext(), bbrowWeight);
                 } catch (NumberFormatException e) {
                     // Input is not a number.
                 }
                 break;
 
-            case R.id.btnSaveOHPress:
+            case R.id.btnSavePullUps:
                 try {
-                    double ohPressWeight = Double.parseDouble(etOHPress.getText().toString());
-                    SharedPrefs.setWeightOHPress(getContext(), ohPressWeight);
+                    double pullupWeight = Double.parseDouble(etPullUps.getText().toString());
+                    SharedPrefs.setWeightPullUp(getContext(), pullupWeight);
                 } catch (NumberFormatException e) {
                     // Input is not a number.
                 }
@@ -88,17 +88,17 @@ public class Pull2Weight extends Fragment implements View.OnClickListener {
 
             case R.id.btnSaveHammerCurls:
                 try {
-                    double inclineDBWeight = Double.parseDouble(etInclineDBPress.getText().toString());
-                    SharedPrefs.setWeightInclineDBPress(getContext(), inclineDBWeight);
+                    double hammercurlWeight = Double.parseDouble(etHammerCurls.getText().toString());
+                    SharedPrefs.setWeightHammerCurl(getContext(), hammercurlWeight);
                 } catch (NumberFormatException e) {
                     // Input is not a number.
                 }
                 break;
 
-            case R.id.btnSaveOHLat:
+            case R.id.btnSaveDBCurls:
                 try {
-                    double OHLatWeight = Double.parseDouble(etOHLat.getText().toString());
-                    SharedPrefs.setWeightOHLat(getContext(), OHLatWeight);
+                    double dbcurlWeight = Double.parseDouble(etDBCurls.getText().toString());
+                    SharedPrefs.setWeightDBCurl(getContext(), dbcurlWeight);
                 } catch (NumberFormatException e) {
                     // Input is not a number.
                 }

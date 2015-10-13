@@ -40,15 +40,15 @@ public class SharedPrefs {
         setWeight(context, weight, DBCURL_PREF);
     }
 
-    public static void setWeightBenchPress(Context context, double weight) {
+    public static void setWeightBenchPress5x5(Context context, double weight) {
         setWeight(context, weight, BENCH_PRESS_PREF);
     }
 
     public static void setWeightBenchPress3x8(Context context, double weight) {
-        setWeight(context, weight, BENCH_PRESS_PREF);
+        setWeight(context, weight, BENCH_PRESS_3X8_PREF);
     }
 
-    public static void setWeightOHPress(Context context, double weight) {
+    public static void setWeightOHPress5x5(Context context, double weight) {
         setWeight(context, weight, OH_PRESS_PREF);
     }
 
@@ -91,15 +91,15 @@ public class SharedPrefs {
         return getWeight(context, DBCURL_PREF);
     }
 
-    public static double getWeightBenchPress(Context context) {
+    public static double getWeightBenchPress5x5(Context context) {
         return getWeight(context, BENCH_PRESS_PREF);
     }
 
-    public static double getWeightBenchPress3X8(Context context) {
+    public static double getWeightBenchPress3x8(Context context) {
         return getWeight(context, BENCH_PRESS_3X8_PREF);
     }
 
-    public static double getWeightOHPress(Context context) {
+    public static double getWeightOHPress5x5(Context context) {
         return getWeight(context, OH_PRESS_PREF);
     }
 

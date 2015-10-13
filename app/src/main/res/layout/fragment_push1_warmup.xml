@@ -30,7 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/view_oh_press_5x5"
+        android:text="@string/view_oh_press_3x8"
         android:id="@+id/tvOHPress"
         android:layout_alignLeft="@+id/tvBenchPress"
         android:layout_below="@id/tvBenchPress"

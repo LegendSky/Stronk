@@ -51,7 +51,7 @@ public class Pull2Activity extends AppCompatActivity {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new Pull2Workout(), "Workout");
         adapter.addFragment(new Pull2WarmUp(), "Warm up");
-        adapter.addFragment(new Pull2Weight(), "Other");
+        adapter.addFragment(new Pull2Weight(), "Weight");
         viewPager.setAdapter(adapter);
     }
 

@@ -4,12 +4,88 @@
     android:layout_height="match_parent"
     tools:context="info.androidhive.stronk.fragments.OneFragment">
 
+    <!-- BB row -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/warmup"
-        android:textSize="40dp"
-        android:textStyle="bold"
-        android:layout_centerInParent="true"/>
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/view_bb_row"
+        android:id="@+id/tvBBRow"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/start_weight"
+        android:id="@+id/tvBBRowWeight"
+        android:layout_alignBottom="@+id/tvBBRow"
+        android:layout_toRightOf="@+id/tvBBRow"
+        android:layout_marginLeft="@dimen/weight_margin_left"/>
+
+    <!-- Pull Ups row -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/view_pullup"
+        android:id="@+id/tvPullUps"
+        android:layout_alignLeft="@+id/tvBBRow"
+        android:layout_below="@id/tvBBRow"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/start_weight"
+        android:id="@+id/tvPullUpWeight"
+        android:layout_alignBottom="@+id/tvPullUps"
+        android:layout_toRightOf="@+id/tvPullUps"
+        android:layout_marginLeft="@dimen/weight_margin_left"/>
+
+    <!-- Hammer curls row -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/view_hammer_curl"
+        android:id="@+id/tvHammerCurls"
+        android:layout_alignLeft="@+id/tvBBRow"
+        android:layout_below="@id/tvPullUps"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/start_weight"
+        android:id="@+id/tvHammerCurlsWeight"
+        android:layout_alignBottom="@+id/tvHammerCurls"
+        android:layout_toRightOf="@+id/tvHammerCurls"
+        android:layout_marginLeft="@dimen/weight_margin_left"/>
+
+    <!-- DB curls row -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/view_db_curl"
+        android:id="@+id/tvDBCurls"
+        android:layout_alignLeft="@+id/tvBBRow"
+        android:layout_below="@id/tvHammerCurls"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/start_weight"
+        android:id="@+id/tvDBCurlsWeight"
+        android:layout_alignBottom="@+id/tvDBCurls"
+        android:layout_toRightOf="@+id/tvDBCurls"
+        android:layout_marginLeft="@dimen/weight_margin_left"/>
 
 </RelativeLayout>

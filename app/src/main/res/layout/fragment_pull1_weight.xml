@@ -12,7 +12,7 @@
         android:text="@string/view_deadlift"
         android:id="@+id/tvDeadlift"
         android:layout_marginTop="60dp"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginStart="40dp" />
 
     <EditText

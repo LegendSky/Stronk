@@ -1,4 +1,4 @@
-package com.android.stronk.fragments.push1;
+package com.android.stronk.fragments.push2;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -15,14 +15,14 @@ import com.android.stronk.activity.SharedPrefs;
 import info.androidhive.stronk.R;
 
 
-public class Push1Weight extends Fragment implements View.OnClickListener {
+public class Push2Weight extends Fragment implements View.OnClickListener {
 
-    private EditText etBenchPress;
     private EditText etOHPress;
+    private EditText etBenchPress;
     private EditText etInclineDBPress;
     private EditText etOHLat;
 
-    public Push1Weight() {
+    public Push2Weight() {
         // Required empty public constructor
     }
 
@@ -35,10 +35,10 @@ public class Push1Weight extends Fragment implements View.OnClickListener {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_push1_weight, container, false);
+        View view = inflater.inflate(R.layout.fragment_push2_weight, container, false);
 
-        Button btnSaveBenchPress = (Button) view.findViewById(R.id.btnSaveBenchPress);
         Button btnSaveOHPress = (Button) view.findViewById(R.id.btnSaveOHPress);
+        Button btnSaveBenchPress = (Button) view.findViewById(R.id.btnSaveBenchPress);
         Button btnSaveInclineDBPress = (Button) view.findViewById(R.id.btnSaveInclineDBPress);
         Button btnSaveOHLat = (Button) view.findViewById(R.id.btnSaveOHLat);
 
@@ -47,39 +47,38 @@ public class Push1Weight extends Fragment implements View.OnClickListener {
         btnSaveInclineDBPress.setOnClickListener(this);
         btnSaveOHLat.setOnClickListener(this);
 
-        etBenchPress = (EditText) view.findViewById(R.id.etBenchPress);
         etOHPress = (EditText) view.findViewById(R.id.etOHPress);
+        etBenchPress = (EditText) view.findViewById(R.id.etBenchPress);
         etInclineDBPress = (EditText) view.findViewById(R.id.etInclineDBPress);
         etOHLat = (EditText) view.findViewById(R.id.etOHLat);
 
         try {
-            etBenchPress.setText(Double.toString(SharedPrefs.getWeightBenchPress5x5(getContext())));
-            etOHPress.setText(Double.toString(SharedPrefs.getWeightOHPress3x8(getContext())));
+            etOHPress.setText(Double.toString(SharedPrefs.getWeightOHPress5x5(getContext())));
+            etBenchPress.setText(Double.toString(SharedPrefs.getWeightBenchPress3x8(getContext())));
             etInclineDBPress.setText(Double.toString(SharedPrefs.getWeightInclineDB(getContext())));
             etOHLat.setText(Double.toString(SharedPrefs.getWeightOHLat(getContext())));
         } catch (Exception e) {
             // Invalid number saved in prefs.
         }
-
         return view;
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.btnSaveBenchPress:
+            case R.id.btnSaveOHPress:
                 try {
-                    double benchPressWeight = Double.parseDouble(etBenchPress.getText().toString());
-                    SharedPrefs.setWeightBenchPress5x5(getContext(), benchPressWeight);
+                    double ohPressWeight = Double.parseDouble(etOHPress.getText().toString());
+                    SharedPrefs.setWeightOHPress5x5(getContext(), ohPressWeight);
                 } catch (NumberFormatException e) {
                     // Input is not a number.
                 }
                 break;
 
-            case R.id.btnSaveOHPress:
+            case R.id.btnSaveBenchPress:
                 try {
-                    double ohPressWeight = Double.parseDouble(etOHPress.getText().toString());
-                    SharedPrefs.setWeightOHPress3x8(getContext(), ohPressWeight);
+                    double benchPressWeight = Double.parseDouble(etBenchPress.getText().toString());
+                    SharedPrefs.setWeightBenchPress3x8(getContext(), benchPressWeight);
                 } catch (NumberFormatException e) {
                     // Input is not a number.
                 }

@@ -41,7 +41,7 @@ public class Push1Workout extends Fragment {
         TextView tvInclineDBWeight = (TextView) view.findViewById(R.id.tvInclineDBPressWeight);
         TextView tvOHLatWeight = (TextView) view.findViewById(R.id.tvOHLatWeight);
 
-        tvBenchPressWeight.setText(Double.toString(SharedPrefs.getWeightBenchPress(getContext())));
+        tvBenchPressWeight.setText(Double.toString(SharedPrefs.getWeightBenchPress5x5(getContext())));
         tvOHPressWeight.setText(Double.toString(SharedPrefs.getWeightOHPress3x8(getContext())));
         tvInclineDBWeight.setText(Double.toString(SharedPrefs.getWeightInclineDB(getContext())));
         tvOHLatWeight.setText(Double.toString(SharedPrefs.getWeightOHLat(getContext())));
