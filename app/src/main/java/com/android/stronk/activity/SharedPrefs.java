@@ -16,9 +16,13 @@ public class SharedPrefs {
     public static final String DBCURL_PREF = "dbcurl";
 
     public static final String BENCH_PRESS_PREF = "benchpress";
+    public static final String BENCH_PRESS_3X8_PREF = "benchpress3x8";
     public static final String OH_PRESS_PREF = "ohpress";
+    public static final String OH_PRESS_3X8_PREF = "ohpress";
     public static final String INCLINE_DB_PREF = "inclinedb";
     public static final String OH_LAT_PREF = "ohlat";
+
+    public static final String BB_ROW_PREF = "ohlat";
 
     public static void setWeightDeadlift(Context context, double weight) {
         setWeight(context, weight, DEADLIFT_PREF);
@@ -40,8 +44,16 @@ public class SharedPrefs {
         setWeight(context, weight, BENCH_PRESS_PREF);
     }
 
+    public static void setWeightBenchPress3x8(Context context, double weight) {
+        setWeight(context, weight, BENCH_PRESS_PREF);
+    }
+
     public static void setWeightOHPress(Context context, double weight) {
         setWeight(context, weight, OH_PRESS_PREF);
+    }
+
+    public static void setWeightOHPress3x8(Context context, double weight) {
+        setWeight(context, weight, OH_PRESS_3X8_PREF);
     }
 
     public static void setWeightInclineDBPress(Context context, double weight) {
@@ -50,6 +62,10 @@ public class SharedPrefs {
 
     public static void setWeightOHLat(Context context, double weight) {
         setWeight(context, weight, OH_LAT_PREF);
+    }
+
+    public static void setWeightBBRow(Context context, double weight) {
+        setWeight(context, weight, BB_ROW_PREF);
     }
 
     private static void setWeight(Context context, double weight, String pref) {
@@ -79,8 +95,16 @@ public class SharedPrefs {
         return getWeight(context, BENCH_PRESS_PREF);
     }
 
+    public static double getWeightBenchPress3X8(Context context) {
+        return getWeight(context, BENCH_PRESS_3X8_PREF);
+    }
+
     public static double getWeightOHPress(Context context) {
         return getWeight(context, OH_PRESS_PREF);
+    }
+
+    public static double getWeightOHPress3x8(Context context) {
+        return getWeight(context, OH_PRESS_3X8_PREF);
     }
 
     public static double getWeightInclineDB(Context context) {
@@ -89,6 +113,10 @@ public class SharedPrefs {
 
     public static double getWeightOHLat(Context context) {
         return getWeight(context, OH_LAT_PREF);
+    }
+
+    public static double getWeightBBRow(Context context) {
+        return getWeight(context, BB_ROW_PREF);
     }
 
     private static double getWeight(Context context, String pref) {

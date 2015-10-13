@@ -4,12 +4,12 @@
     android:layout_height="match_parent"
     tools:context="info.androidhive.stronk.fragments.OneFragment">
 
-    <!-- Deadlift row -->
+    <!-- Bench press row -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/view_bench_press"
+        android:text="@string/view_bench_press_5x5"
         android:id="@+id/tvBenchPress"
         android:layout_marginTop="60dp"
         android:layout_marginLeft="40dp"
@@ -25,22 +25,12 @@
         android:layout_toRightOf="@+id/tvBenchPress"
         android:layout_marginLeft="@dimen/weight_margin_left"/>
 
+    <!-- OH Press row -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/kg"
-        android:id="@+id/tvBenchPressKG"
-        android:layout_alignTop="@+id/tvBenchPress"
-        android:layout_toRightOf="@+id/tvBenchPressWeight"
-        android:layout_marginLeft="@dimen/kg_margin_left" />
-
-    <!-- Pull Ups row -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/view_oh_press"
+        android:text="@string/view_oh_press_5x5"
         android:id="@+id/tvOHPress"
         android:layout_alignLeft="@+id/tvBenchPress"
         android:layout_below="@id/tvBenchPress"
@@ -56,17 +46,7 @@
         android:layout_toRightOf="@+id/tvOHPress"
         android:layout_marginLeft="@dimen/weight_margin_left"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/kg"
-        android:id="@+id/tvOHPressKG"
-        android:layout_alignTop="@+id/tvOHPress"
-        android:layout_toRightOf="@+id/tvOHPressWeight"
-        android:layout_marginLeft="@dimen/kg_margin_left" />
-
-    <!-- Hammer curls row -->
+    <!-- Incline DB row -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -87,17 +67,7 @@
         android:layout_toRightOf="@+id/tvInclineDBPress"
         android:layout_marginLeft="@dimen/weight_margin_left"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/kg"
-        android:id="@+id/tvInclineDBPressKG"
-        android:layout_alignTop="@+id/tvInclineDBPress"
-        android:layout_toRightOf="@+id/tvInclineDBPressWeight"
-        android:layout_marginLeft="@dimen/kg_margin_left" />
-
-    <!-- DB curls row -->
+    <!-- OH SS Lat row -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -117,15 +87,5 @@
         android:layout_alignBottom="@+id/tvOHLat"
         android:layout_toRightOf="@+id/tvOHLat"
         android:layout_marginLeft="@dimen/weight_margin_left"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/kg"
-        android:id="@+id/tvOHLatKG"
-        android:layout_alignTop="@+id/tvOHLat"
-        android:layout_toRightOf="@+id/tvOHLatWeight"
-        android:layout_marginLeft="@dimen/kg_margin_left" />
 
 </RelativeLayout>

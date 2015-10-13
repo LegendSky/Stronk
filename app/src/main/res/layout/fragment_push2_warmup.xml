@@ -4,12 +4,88 @@
     android:layout_height="match_parent"
     tools:context="info.androidhive.stronk.fragments.OneFragment">
 
+    <!-- OH press row -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/warmup"
-        android:textSize="40dp"
-        android:textStyle="bold"
-        android:layout_centerInParent="true"/>
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/view_oh_press_5x5"
+        android:id="@+id/tvOHPress"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/start_weight"
+        android:id="@+id/tvOHPressWeight"
+        android:layout_alignBottom="@+id/tvOHPress"
+        android:layout_toRightOf="@+id/tvOHPress"
+        android:layout_marginLeft="@dimen/weight_margin_left"/>
+
+    <!-- Bench press row -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/view_bench_press_3x8"
+        android:id="@+id/tvBenchPress"
+        android:layout_alignLeft="@+id/tvOHPress"
+        android:layout_below="@id/tvOHPress"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/start_weight"
+        android:id="@+id/tvBenchPressWeight"
+        android:layout_alignBottom="@+id/tvBenchPress"
+        android:layout_toRightOf="@+id/tvBenchPress"
+        android:layout_marginLeft="@dimen/weight_margin_left"/>
+
+    <!-- Incline DB row -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/view_incline_db"
+        android:id="@+id/tvInclineDBPress"
+        android:layout_alignLeft="@+id/tvBenchPress"
+        android:layout_below="@id/tvBenchPress"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/start_weight"
+        android:id="@+id/tvInclineDBPressWeight"
+        android:layout_alignBottom="@+id/tvInclineDBPress"
+        android:layout_toRightOf="@+id/tvInclineDBPress"
+        android:layout_marginLeft="@dimen/weight_margin_left"/>
+
+    <!-- OH SS Lat row -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/view_oh_triceps_ss_lat_raises"
+        android:id="@+id/tvOHLat"
+        android:layout_alignLeft="@+id/tvBenchPress"
+        android:layout_below="@id/tvInclineDBPress"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/start_weight"
+        android:id="@+id/tvOHLatWeight"
+        android:layout_alignBottom="@+id/tvOHLat"
+        android:layout_toRightOf="@+id/tvOHLat"
+        android:layout_marginLeft="@dimen/weight_margin_left"/>
 
 </RelativeLayout>

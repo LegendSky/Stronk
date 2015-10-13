@@ -243,6 +243,88 @@
         android:layout_toRightOf="@+id/Title4"
         android:layout_toEndOf="@+id/Title4" />
 
+    <!-- Weights -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/tvOHPressWeight"
+        android:layout_alignTop="@+id/row1intensity"
+        android:layout_toRightOf="@+id/row1intensity"
+        android:layout_marginLeft="@dimen/weight_margin_left" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/tvBenchPressWeight"
+        android:layout_alignTop="@+id/row2intensity"
+        android:layout_toRightOf="@+id/row2intensity"
+        android:layout_marginLeft="@dimen/weight_margin_left" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/tvInclineDBPressWeight"
+        android:layout_alignTop="@+id/row3intensity"
+        android:layout_toRightOf="@+id/row3intensity"
+        android:layout_marginLeft="@dimen/weight_margin_left" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/tvOHLatWeight"
+        android:layout_alignTop="@+id/row4intensity"
+        android:layout_toRightOf="@+id/row4intensity"
+        android:layout_marginLeft="@dimen/weight_margin_left" />
+
+    <!-- Weights KG -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="KG"
+        android:id="@+id/tvOHPressKG"
+        android:layout_alignTop="@+id/row1intensity"
+        android:layout_toRightOf="@+id/tvOHPressWeight"
+        android:layout_marginLeft="@dimen/kg_margin_left" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="KG"
+        android:id="@+id/tvBenchPressKG"
+        android:layout_alignTop="@+id/row2intensity"
+        android:layout_toRightOf="@+id/tvBenchPressWeight"
+        android:layout_marginLeft="@dimen/kg_margin_left" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="KG"
+        android:id="@+id/tvInclineDBPressKG"
+        android:layout_alignTop="@+id/row3intensity"
+        android:layout_toRightOf="@+id/tvInclineDBPressWeight"
+        android:layout_marginLeft="@dimen/kg_margin_left" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="KG"
+        android:id="@+id/tvOHLatKG"
+        android:layout_alignTop="@+id/row4intensity"
+        android:layout_toRightOf="@+id/tvOHLatWeight"
+        android:layout_marginLeft="@dimen/kg_margin_left" />
+
     <!-- Chronometer -->
     <Chronometer
         android:layout_width="wrap_content"

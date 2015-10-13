@@ -263,6 +263,88 @@
         android:layout_toRightOf="@+id/Title4"
         android:layout_toEndOf="@+id/Title4" />
 
+    <!-- Weights -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/tvBBRowWeight"
+        android:layout_alignTop="@+id/row1intensity"
+        android:layout_toRightOf="@+id/row1intensity"
+        android:layout_marginLeft="@dimen/weight_margin_left" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/tvPullUpWeight"
+        android:layout_alignTop="@+id/row2intensity"
+        android:layout_toRightOf="@+id/row2intensity"
+        android:layout_marginLeft="@dimen/weight_margin_left" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/tvHammerCurlsWeight"
+        android:layout_alignTop="@+id/row3intensity"
+        android:layout_toRightOf="@+id/row3intensity"
+        android:layout_marginLeft="@dimen/weight_margin_left" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/tvDBCurlsWeight"
+        android:layout_alignTop="@+id/row4intensity"
+        android:layout_toRightOf="@+id/row4intensity"
+        android:layout_marginLeft="@dimen/weight_margin_left" />
+
+    <!-- Weights KG -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="KG"
+        android:id="@+id/tvBBRowKG"
+        android:layout_alignTop="@+id/row1intensity"
+        android:layout_toRightOf="@+id/tvBBRowWeight"
+        android:layout_marginLeft="@dimen/kg_margin_left" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="KG"
+        android:id="@+id/tvPullUpKG"
+        android:layout_alignTop="@+id/row2intensity"
+        android:layout_toRightOf="@+id/tvPullUpWeight"
+        android:layout_marginLeft="@dimen/kg_margin_left" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="KG"
+        android:id="@+id/tvHammerCurlsKG"
+        android:layout_alignTop="@+id/row3intensity"
+        android:layout_toRightOf="@+id/tvHammerCurlsWeight"
+        android:layout_marginLeft="@dimen/kg_margin_left" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="KG"
+        android:id="@+id/tvDBCurlsKG"
+        android:layout_alignTop="@+id/row4intensity"
+        android:layout_toRightOf="@+id/tvDBCurlsWeight"
+        android:layout_marginLeft="@dimen/kg_margin_left" />
+
     <!-- Chronometer -->
     <Chronometer
         android:layout_width="wrap_content"

@@ -48,7 +48,7 @@ public class Pull1WarmUp extends Fragment {
         String warmup;
         double weightDeadlift = SharedPrefs.getWeightDeadlift(getContext());
         if (weightDeadlift < 70)
-            warmup = "No warm up.";
+            warmup = "No warm up";
         else if (weightDeadlift < 80)
             warmup = "(1 x 60)";
         else if (weightDeadlift < 90)
@@ -60,7 +60,7 @@ public class Pull1WarmUp extends Fragment {
     }
 
     private String getPullupWarmUp() {
-        return "0";
+        return "No warm up";
     }
 
 }
