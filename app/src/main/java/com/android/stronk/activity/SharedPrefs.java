@@ -17,8 +17,8 @@ public class SharedPrefs {
 
     public static final String BENCH_PRESS_PREF = "benchpress";
     public static final String BENCH_PRESS_3X8_PREF = "benchpress3x8";
-    public static final String OH_PRESS_PREF = "ohpress";
-    public static final String OH_PRESS_3X8_PREF = "ohpress";
+    public static final String OH_PRESS_5X5_PREF = "ohpress";
+    public static final String OH_PRESS_3X8_PREF = "ohpress3x8";
     public static final String INCLINE_DB_PREF = "inclinedb";
     public static final String OH_LAT_PREF = "ohlat";
 
@@ -49,7 +49,7 @@ public class SharedPrefs {
     }
 
     public static void setWeightOHPress5x5(Context context, double weight) {
-        setWeight(context, weight, OH_PRESS_PREF);
+        setWeight(context, weight, OH_PRESS_5X5_PREF);
     }
 
     public static void setWeightOHPress3x8(Context context, double weight) {
@@ -100,7 +100,7 @@ public class SharedPrefs {
     }
 
     public static double getWeightOHPress5x5(Context context) {
-        return getWeight(context, OH_PRESS_PREF);
+        return getWeight(context, OH_PRESS_5X5_PREF);
     }
 
     public static double getWeightOHPress3x8(Context context) {
