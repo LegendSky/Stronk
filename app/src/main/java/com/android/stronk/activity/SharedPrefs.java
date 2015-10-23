@@ -22,7 +22,7 @@ public class SharedPrefs {
     public static final String INCLINE_DB_PREF = "inclinedb";
     public static final String OH_LAT_PREF = "ohlat";
 
-    public static final String BB_ROW_PREF = "ohlat";
+    public static final String BB_ROW_PREF = "bbrow";
 
     public static void setWeightDeadlift(Context context, double weight) {
         setWeight(context, weight, DEADLIFT_PREF);
