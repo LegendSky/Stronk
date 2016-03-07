@@ -8,8 +8,8 @@
     <dimen name="custom_tab_layout_height">72dp</dimen>
 
     <!-- Menu button properties -->
-    <dimen name="activity_button_text_size">15dp</dimen>
-    <dimen name="activity_button_height">100dp</dimen>
+    <dimen name="workout_button_text_size">15dp</dimen>
+    <dimen name="workout_button_height">83dp</dimen>
 
     <!-- Workout layout dimensions -->
     <dimen name="workout_margin_left">20dp</dimen>

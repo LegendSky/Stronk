@@ -21,6 +21,8 @@
     <string name="Pull_2">Pull 2</string>
     <string name="Push_1">Push 1</string>
     <string name="Push_2">Push 2</string>
+    <string name="Legs_1">Legs 1</string>
+    <string name="Legs_2">Legs 2</string>
 
     <!-- Exercise titles -->
     <string name="OH_Press">OH Press</string>
