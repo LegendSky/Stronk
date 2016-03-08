@@ -45,6 +45,12 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
+            android:name="com.android.stronk.activity.LegsActivity"
+            android:label="@string/title_activity_legs"
+            android:parentActivityName="com.android.stronk.activity.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
             android:name="com.android.stronk.activity.Progress"
             android:label="@string/title_activity_progress"
             android:parentActivityName="com.android.stronk.activity.MainActivity"

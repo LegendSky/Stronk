@@ -47,7 +47,7 @@ public class Pull1Weight extends Fragment implements View.OnClickListener {
         btnSaveHammerCurls.setOnClickListener(this);
         btnSaveDBCurls.setOnClickListener(this);
 
-        etDeadlift = (EditText) view.findViewById(R.id.etDeadlift);
+        etDeadlift = (EditText) view.findViewById(R.id.etSquat);
         etPullUps = (EditText) view.findViewById(R.id.etPullUps);
         etHammerCurls = (EditText) view.findViewById(R.id.etHammerCurls);
         etDBCurls = (EditText) view.findViewById(R.id.etDBCurls);

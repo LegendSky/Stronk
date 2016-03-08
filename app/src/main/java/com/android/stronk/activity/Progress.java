@@ -28,7 +28,7 @@ public class Progress extends Activity implements View.OnClickListener {
         Button save = (Button) findViewById(R.id.btnSave);
         Button load = (Button) findViewById(R.id.btnLoad);
         editText = (EditText) findViewById(R.id.editText);
-        tvDeadliftWeight = (TextView) findViewById(R.id.tvDeadliftWeight);
+        tvDeadliftWeight = (TextView) findViewById(R.id.tvSquatWeight);
         save.setOnClickListener(this);
         load.setOnClickListener(this);
     }

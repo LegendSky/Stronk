@@ -34,7 +34,7 @@ public class Pull1Workout extends Fragment {
         View view = inflater.inflate(R.layout.fragment_pull1_workout,
                 container, false);
 
-        TextView tvDeadliftWeight = (TextView) view.findViewById(R.id.tvDeadliftWeight);
+        TextView tvDeadliftWeight = (TextView) view.findViewById(R.id.tvSquatWeight);
         TextView tvPullupWeight = (TextView) view.findViewById(R.id.tvPullUpWeight);
         TextView tvHammercurlWeight = (TextView) view.findViewById(R.id.tvHammerCurlsWeight);
         TextView tvDBCurlWeight = (TextView) view.findViewById(R.id.tvDBCurlsWeight);

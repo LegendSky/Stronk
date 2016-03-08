@@ -10,6 +10,7 @@ public class SharedPrefs {
 
     public static final String FILE_NAME = "preferences";
 
+    public static final String SQUAT_PREF = "squat";
     public static final String DEADLIFT_PREF = "deadlift";
     public static final String PULLUP_PREF = "pullup";
     public static final String HAMMERCURL_PREF = "hammercurl";
@@ -26,6 +27,10 @@ public class SharedPrefs {
 
     public static void setWeightDeadlift(Context context, double weight) {
         setWeight(context, weight, DEADLIFT_PREF);
+    }
+
+    public static void setWeightSquat(Context context, double weight) {
+        setWeight(context, weight, SQUAT_PREF);
     }
 
     public static void setWeightPullUp(Context context, double weight) {
@@ -77,6 +82,10 @@ public class SharedPrefs {
 
     public static double getWeightDeadlift(Context context) {
         return getWeight(context, DEADLIFT_PREF);
+    }
+
+    public static double getWeightSquat(Context context) {
+        return getWeight(context, SQUAT_PREF);
     }
 
     public static double getWeightPullUp(Context context) {

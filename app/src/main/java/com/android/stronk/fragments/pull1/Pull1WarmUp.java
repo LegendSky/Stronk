@@ -5,7 +5,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import com.android.stronk.activity.SharedPrefs;
@@ -30,7 +29,7 @@ public class Pull1WarmUp extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_pull1_warmup, container, false);
 
-        TextView deadliftWarmUpWeight = (TextView) view.findViewById(R.id.tvDeadliftWeight);
+        TextView deadliftWarmUpWeight = (TextView) view.findViewById(R.id.tvSquatWeight);
         TextView pullupWarmUpWeight = (TextView) view.findViewById(R.id.tvPullUpWeight);
         TextView hammercurlWarmUpWeight = (TextView) view.findViewById(R.id.tvHammerCurlsWeight);
         TextView dbcurlWarmUpWeight = (TextView) view.findViewById(R.id.tvDBCurlsWeight);
@@ -50,9 +49,15 @@ public class Pull1WarmUp extends Fragment {
         if (weightDeadlift < 70)
             warmup = "No warm up";
         else if (weightDeadlift < 80)
-            warmup = "(1 x 60)";
+            warmup = "(5 x 60)";
         else if (weightDeadlift < 90)
-            warmup = "(1 x 60) & (1 x 70)";
+            warmup = "(5 x 60) & (5 x 70)";
+        else if (weightDeadlift < 100)
+            warmup = "(5 x 60) & (5 x 80)";
+        else if (weightDeadlift < 110)
+            warmup = "(5 x 60) & (5 x 80) & (5 x 90)";
+        else if (weightDeadlift < 120)
+            warmup = "(5 x 60) & (5 x 80) & (5 x 95)";
         else
             warmup = "Expand this app.";
 

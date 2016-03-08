@@ -14,6 +14,7 @@
     <string name="title_activity_pull2">Pull 2</string>
     <string name="title_activity_push1">Push 1</string>
     <string name="title_activity_push2">Push 2</string>
+    <string name="title_activity_legs">Legs 1</string>
     <string name="title_activity_progress">Progress</string>
 
     <!-- Exercise day -->
@@ -30,6 +31,7 @@
     <string name="Incline_DB_Press">Incline DB Press</string>
     <string name="OH_Lat">OH SS Lat</string>
     <string name="Deadlift">Deadlift</string>
+    <string name="Squat">Squat</string>
     <string name="BB_Row">BB Row</string>
     <string name="Pull_Ups">Pull Ups</string>
     <string name="Hammer_Curls">Hammer Curls</string>
@@ -55,6 +57,7 @@
     <string name="WarmUpRest">Warm Up(3 min rest)</string>
 
     <!-- Preference textviews -->
+    <string name="view_squat">Squat: </string>
     <string name="view_deadlift">Deadlift: </string>
     <string name="view_bb_row">BB Row: </string>
     <string name="view_pullup">Pull Up: </string>

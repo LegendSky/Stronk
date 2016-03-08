@@ -229,7 +229,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="0"
-        android:id="@+id/tvDeadliftWeight"
+        android:id="@+id/tvSquatWeight"
         android:layout_alignTop="@+id/row1intensity"
         android:layout_toRightOf="@+id/row1intensity"
         android:layout_marginLeft="@dimen/weight_margin_left" />
@@ -272,7 +272,7 @@
         android:text="KG"
         android:id="@+id/tvDeadliftKG"
         android:layout_alignTop="@+id/row1intensity"
-        android:layout_toRightOf="@+id/tvDeadliftWeight"
+        android:layout_toRightOf="@+id/tvSquatWeight"
         android:layout_marginLeft="@dimen/kg_margin_left" />
 
     <TextView

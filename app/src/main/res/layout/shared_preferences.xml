@@ -21,14 +21,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/view_deadlift"
-        android:id="@+id/tvDeadlift"
+        android:id="@+id/tvSquat"
         android:layout_gravity="center_horizontal" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="-"
-        android:id="@+id/tvDeadliftWeight"
+        android:id="@+id/tvSquatWeight"
         android:layout_gravity="center_horizontal" />
 
     <EditText

@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="info.androidhive.stronk.fragments.OneFragment">
+
+    <!-- Squat row -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/view_squat"
+        android:id="@+id/tvSquat"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="40dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/etSquat"
+        android:layout_alignBottom="@+id/tvSquat"
+        android:layout_toLeftOf="@+id/tvSquatKG"
+        android:layout_marginBottom="-5dp"
+        android:width="50dp"
+        android:imeOptions="actionDone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/kg"
+        android:id="@+id/tvSquatKG"
+        android:layout_alignTop="@+id/tvSquat"
+        android:layout_toLeftOf="@+id/btnSaveSquat"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:id="@+id/btnSaveSquat"
+        android:layout_alignBottom="@+id/tvSquat"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/etSquat"
+        android:layout_marginRight="@dimen/save_button_margin_right"/>
+
+</RelativeLayout>

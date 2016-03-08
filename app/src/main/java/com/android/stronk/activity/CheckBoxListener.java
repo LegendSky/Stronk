@@ -41,10 +41,9 @@ public class CheckBoxListener implements View.OnClickListener {
             chronometer.start();
 
             //Actions for unchecked checkbox.
-        } else {
-
+        }/* else {
             //Stops the chronometer.
             chronometer.stop();
-        }
+        }*/
     }
 }
