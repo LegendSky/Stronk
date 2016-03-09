@@ -32,6 +32,9 @@
     <string name="OH_Lat">OH SS Lat</string>
     <string name="Deadlift">Deadlift</string>
     <string name="Squat">Squat</string>
+    <string name="Romanian_Deadlift">Romanian Deadlift</string>
+    <string name="Glute_Ham_Raises">Glute Ham Raises</string>
+    <string name="Calf_Raises">Calf Raises</string>
     <string name="BB_Row">BB Row</string>
     <string name="Pull_Ups">Pull Ups</string>
     <string name="Hammer_Curls">Hammer Curls</string>
@@ -44,6 +47,7 @@
     <!-- Intensities -->
     <string name="OneFive">(1 x 5+)</string>
     <string name="ThreeEight">(3 x 8-12)</string>
+    <string name="ThreeFive">(3 x 5+)</string>
     <string name="FourEight">(4 x 8-12)</string>
     <string name="FiveFive">(5 x 5)</string>
     <string name="dash">-</string>
@@ -59,6 +63,10 @@
     <!-- Preference textviews -->
     <string name="view_squat">Squat: </string>
     <string name="view_deadlift">Deadlift: </string>
+    <string name="view_rom_deadlift">Rom. Deadlift: </string>
+    <string name="view_calf_raises">Calf raises: </string>
+    <string name="view_front_squats">Front squats: </string>
+    <string name="view_glute_ham_raises">Glute ham raises: </string>
     <string name="view_bb_row">BB Row: </string>
     <string name="view_pullup">Pull Up: </string>
     <string name="view_hammer_curl">Hammer Curl: </string>

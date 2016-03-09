@@ -10,6 +10,7 @@ public class SharedPrefs {
 
     public static final String FILE_NAME = "preferences";
 
+    public static final String ROM_DEADLIFT_PREF = "romdeadlift";
     public static final String SQUAT_PREF = "squat";
     public static final String DEADLIFT_PREF = "deadlift";
     public static final String PULLUP_PREF = "pullup";
@@ -31,6 +32,10 @@ public class SharedPrefs {
 
     public static void setWeightSquat(Context context, double weight) {
         setWeight(context, weight, SQUAT_PREF);
+    }
+
+    public static void setWeightRomDeadlift(Context context, double weight) {
+        setWeight(context, weight, ROM_DEADLIFT_PREF);
     }
 
     public static void setWeightPullUp(Context context, double weight) {
@@ -86,6 +91,10 @@ public class SharedPrefs {
 
     public static double getWeightSquat(Context context) {
         return getWeight(context, SQUAT_PREF);
+    }
+
+    public static double getWeightRomDeadlift(Context context) {
+        return getWeight(context, ROM_DEADLIFT_PREF);
     }
 
     public static double getWeightPullUp(Context context) {

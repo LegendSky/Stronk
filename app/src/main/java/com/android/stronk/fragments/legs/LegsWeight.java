@@ -17,7 +17,7 @@ import info.androidhive.stronk.R;
 
 public class LegsWeight extends Fragment implements View.OnClickListener {
 
-    private EditText etSquat;
+    private EditText etSquat, etRomDeadlift;
 
     public LegsWeight() {
         // Required empty public constructor
@@ -35,13 +35,17 @@ public class LegsWeight extends Fragment implements View.OnClickListener {
         View view = inflater.inflate(R.layout.fragment_legs_weight, container, false);
 
         Button btnSaveSquat = (Button) view.findViewById(R.id.btnSaveSquat);
+        Button btnSaveRomDeadlift = (Button) view.findViewById(R.id.btnSaveRomDeadlift);
 
         btnSaveSquat.setOnClickListener(this);
+        btnSaveRomDeadlift.setOnClickListener(this);
 
         etSquat = (EditText) view.findViewById(R.id.etSquat);
+        etRomDeadlift = (EditText) view.findViewById(R.id.etRomDeadlift);
 
         try {
             etSquat.setText(Double.toString(SharedPrefs.getWeightSquat(getContext())));
+            etRomDeadlift.setText(Double.toString(SharedPrefs.getWeightRomDeadlift(getContext())));
         } catch (Exception e) {
             // Invalid number saved in prefs.
         }
@@ -56,6 +60,14 @@ public class LegsWeight extends Fragment implements View.OnClickListener {
                 try {
                     double squatWeight = Double.parseDouble(etSquat.getText().toString());
                     SharedPrefs.setWeightSquat(getContext(), squatWeight);
+                } catch (NumberFormatException e) {
+                    // Input is not a number.
+                }
+                break;
+            case R.id.btnSaveRomDeadlift:
+                try {
+                    double romDeadliftWeight = Double.parseDouble(etRomDeadlift.getText().toString());
+                    SharedPrefs.setWeightRomDeadlift(getContext(), romDeadliftWeight);
                 } catch (NumberFormatException e) {
                     // Input is not a number.
                 }

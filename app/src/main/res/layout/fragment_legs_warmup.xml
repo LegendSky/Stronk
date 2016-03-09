@@ -25,4 +25,27 @@
         android:layout_toRightOf="@+id/tvSquat"
         android:layout_marginLeft="@dimen/weight_margin_left"/>
 
+    <!-- Romanian deadlift row -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/view_rom_deadlift"
+        android:id="@+id/tvRomanianDeadlift"
+        android:layout_below="@id/tvSquat"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/start_weight"
+        android:id="@+id/tvRomanianDeadliftKG"
+        android:layout_alignBottom="@+id/tvRomanianDeadlift"
+        android:layout_toRightOf="@+id/tvRomanianDeadlift"
+        android:layout_marginLeft="@dimen/weight_margin_left"/>
+
+
 </RelativeLayout>

@@ -36,8 +36,10 @@ public class LegsWorkout extends Fragment {
                 container, false);
 
         TextView tvSquatWeight = (TextView) view.findViewById(R.id.tvSquatWeight);
+        TextView tvRomanianDeadliftWeight = (TextView) view.findViewById(R.id.tvRomanianDeadliftWeight);
 
         tvSquatWeight.setText(Double.toString(SharedPrefs.getWeightSquat(getContext())));
+        tvRomanianDeadliftWeight.setText(Double.toString(SharedPrefs.getWeightRomDeadlift(getContext())));
 
         // Chronometer.
         Chronometer chronometer = (Chronometer) view.findViewById(R.id.chronometer);
@@ -50,15 +52,20 @@ public class LegsWorkout extends Fragment {
         CheckBox row1cb1 = (CheckBox) view.findViewById(R.id.row1checkBox1);
         CheckBox row1cb2 = (CheckBox) view.findViewById(R.id.row1checkBox2);
         CheckBox row1cb3 = (CheckBox) view.findViewById(R.id.row1checkBox3);
-        CheckBox row1cb4 = (CheckBox) view.findViewById(R.id.row1checkBox4);
-        CheckBox row1cb5 = (CheckBox) view.findViewById(R.id.row1checkBox5);
+
+        // Initialise checkboxes.
+        CheckBox row2cb1 = (CheckBox) view.findViewById(R.id.row2checkBox1);
+        CheckBox row2cb2 = (CheckBox) view.findViewById(R.id.row2checkBox2);
+        CheckBox row2cb3 = (CheckBox) view.findViewById(R.id.row2checkBox3);
 
         // Add listener to checkbox.
         row1cb1.setOnClickListener(new CheckBoxListener(row1cb1, ringtone, chronometer));
         row1cb2.setOnClickListener(new CheckBoxListener(row1cb2, ringtone, chronometer));
         row1cb3.setOnClickListener(new CheckBoxListener(row1cb3, ringtone, chronometer));
-        row1cb4.setOnClickListener(new CheckBoxListener(row1cb4, ringtone, chronometer));
-        row1cb5.setOnClickListener(new CheckBoxListener(row1cb5, ringtone, chronometer));
+
+        row2cb1.setOnClickListener(new CheckBoxListener(row2cb1, ringtone, chronometer));
+        row2cb2.setOnClickListener(new CheckBoxListener(row2cb2, ringtone, chronometer));
+        row2cb3.setOnClickListener(new CheckBoxListener(row2cb3, ringtone, chronometer));
 
         return view;
     }

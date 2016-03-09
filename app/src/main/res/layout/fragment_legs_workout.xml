@@ -30,7 +30,7 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Set1"
+        android:text="@string/Set2"
         android:id="@+id/row1checkBox2"
         android:layout_below="@+id/Title1"
         android:layout_toRightOf="@+id/row1checkBox1"
@@ -40,17 +40,18 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Set1"
+        android:text="@string/Set3"
         android:id="@+id/row1checkBox3"
         android:layout_below="@+id/Title1"
         android:layout_toRightOf="@+id/row1checkBox2"
         android:layout_toEndOf="@+id/row1checkBox2"
         android:checked="false" />
 
+    <!--
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Set1"
+        android:text="@string/Set4"
         android:id="@+id/row1checkBox4"
         android:layout_below="@+id/Title1"
         android:layout_toRightOf="@+id/row1checkBox3"
@@ -60,25 +61,24 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Set1"
+        android:text="@string/Set5"
         android:id="@+id/row1checkBox5"
         android:layout_below="@+id/Title1"
         android:layout_toRightOf="@+id/row1checkBox4"
         android:layout_toEndOf="@+id/row1checkBox4"
         android:checked="false" />
+        -->
 
-    <!-- Intensities -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/FiveFive"
+        android:text="@string/ThreeFive"
         android:id="@+id/row1intensity"
         android:layout_alignTop="@+id/Title1"
         android:layout_toRightOf="@+id/Title1"
         android:layout_toEndOf="@+id/Title1" />
 
-    <!-- Weights -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -89,7 +89,6 @@
         android:layout_toRightOf="@+id/row1intensity"
         android:layout_marginLeft="@dimen/weight_margin_left" />
 
-    <!-- Weights KG -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -100,13 +99,119 @@
         android:layout_toRightOf="@+id/tvSquatWeight"
         android:layout_marginLeft="@dimen/kg_margin_left" />
 
-    <!-- Chronometer -->
+    <!-- Row 2 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/Romanian_Deadlift"
+        android:id="@+id/Title2"
+        android:layout_below="@id/row1checkBox1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="@dimen/workout_margin_left"
+        android:textColor="@android:color/black" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Set1"
+        android:id="@+id/row2checkBox1"
+        android:layout_below="@+id/Title2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/workout_margin_left"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Set2"
+        android:id="@+id/row2checkBox2"
+        android:layout_below="@+id/Title2"
+        android:layout_toRightOf="@+id/row1checkBox1"
+        android:layout_toEndOf="@+id/row1checkBox1"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Set3"
+        android:id="@+id/row2checkBox3"
+        android:layout_below="@+id/Title2"
+        android:layout_toRightOf="@+id/row1checkBox2"
+        android:layout_toEndOf="@+id/row1checkBox2"
+        android:checked="false" />
+
+    <!--
+   <CheckBox
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/Set4"
+       android:id="@+id/row2checkBox4"
+       android:layout_below="@+id/Title2"
+       android:layout_toRightOf="@+id/row1checkBox3"
+       android:layout_toEndOf="@+id/row1checkBox3"
+       android:checked="false" />
+
+   <CheckBox
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/Set5"
+       android:id="@+id/row2checkBox5"
+       android:layout_below="@+id/Title2"
+       android:layout_toRightOf="@+id/row1checkBox4"
+       android:layout_toEndOf="@+id/row1checkBox4"
+       android:checked="false" />
+       -->
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textAppearance="?android:attr/textAppearanceMedium"
+       android:text="@string/ThreeEight"
+       android:id="@+id/row2intensity"
+       android:layout_alignTop="@+id/Title2"
+       android:layout_toRightOf="@+id/Title2"
+       android:layout_toEndOf="@+id/Title2" />
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textAppearance="?android:attr/textAppearanceMedium"
+       android:text="0"
+       android:id="@+id/tvRomanianDeadliftWeight"
+       android:layout_alignTop="@+id/row2intensity"
+       android:layout_toRightOf="@+id/row2intensity"
+       android:layout_marginLeft="@dimen/weight_margin_left" />
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textAppearance="?android:attr/textAppearanceMedium"
+       android:text="KG"
+       android:id="@+id/tvRomanianDeadliftKG"
+       android:layout_alignTop="@+id/row2intensity"
+       android:layout_toRightOf="@+id/tvRomanianDeadliftWeight"
+       android:layout_marginLeft="@dimen/kg_margin_left" />
+
+
+
+
+
+
+
+
+
+
+   <!-- Chronometer -->
     <Chronometer
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/chronometer"
         android:textSize="40sp"
-        android:layout_below="@id/Title1"
+        android:layout_below="@id/Title2"
         android:layout_marginTop="150px"
         android:layout_centerHorizontal="true" />
 
