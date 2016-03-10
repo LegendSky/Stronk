@@ -32,6 +32,7 @@
     <string name="OH_Lat">OH SS Lat</string>
     <string name="Deadlift">Deadlift</string>
     <string name="Squat">Squat</string>
+    <string name="Front_Squat">Front Squat</string>
     <string name="Romanian_Deadlift">Romanian Deadlift</string>
     <string name="Glute_Ham_Raises">Glute Ham Raises</string>
     <string name="Calf_Raises">Calf Raises</string>
@@ -47,6 +48,7 @@
     <!-- Intensities -->
     <string name="OneFive">(1 x 5+)</string>
     <string name="ThreeEight">(3 x 8-12)</string>
+    <string name="FiveEight">(5 x 8-12)</string>
     <string name="ThreeFive">(3 x 5+)</string>
     <string name="FourEight">(4 x 8-12)</string>
     <string name="FiveFive">(5 x 5)</string>

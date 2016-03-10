@@ -88,4 +88,133 @@
         android:layout_alignParentRight="true"
         android:layout_alignTop="@+id/etRomDeadlift"
         android:layout_marginRight="@dimen/save_button_margin_right"/>
+
+    <!-- Front squat row -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/view_front_squats"
+        android:id="@+id/tvFrontSquat"
+        android:layout_below="@id/tvRomanianDeadlift"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="40dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/etFrontSquat"
+        android:layout_alignBottom="@+id/tvFrontSquat"
+        android:layout_toLeftOf="@+id/tvFrontSquatKG"
+        android:layout_marginBottom="-5dp"
+        android:width="50dp"
+        android:imeOptions="actionDone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/kg"
+        android:id="@+id/tvFrontSquatKG"
+        android:layout_alignTop="@+id/tvFrontSquat"
+        android:layout_toLeftOf="@+id/btnSaveFrontSquat"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:id="@+id/btnSaveFrontSquat"
+        android:layout_alignBottom="@+id/tvFrontSquat"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/etFrontSquat"
+        android:layout_marginRight="@dimen/save_button_margin_right"/>
+
+    <!-- Glute ham raises row -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/view_glute_ham_raises"
+        android:id="@+id/tvGluteHamRaises"
+        android:layout_below="@id/tvFrontSquat"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="40dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/etGluteHamRaises"
+        android:layout_alignBottom="@+id/tvGluteHamRaises"
+        android:layout_toLeftOf="@+id/tvGluteHamRaisesKG"
+        android:layout_marginBottom="-5dp"
+        android:width="50dp"
+        android:imeOptions="actionDone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/kg"
+        android:id="@+id/tvGluteHamRaisesKG"
+        android:layout_alignTop="@+id/tvGluteHamRaises"
+        android:layout_toLeftOf="@+id/btnSaveGluteHamRaises"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:id="@+id/btnSaveGluteHamRaises"
+        android:layout_alignBottom="@+id/tvGluteHamRaises"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/etGluteHamRaises"
+        android:layout_marginRight="@dimen/save_button_margin_right"/>
+
+    <!-- Calf raises row -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/view_calf_raises"
+        android:id="@+id/tvCalfRaises"
+        android:layout_below="@id/tvGluteHamRaises"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="40dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/etCalfRaises"
+        android:layout_alignBottom="@+id/tvCalfRaises"
+        android:layout_toLeftOf="@+id/tvCalfRaisesKG"
+        android:layout_marginBottom="-5dp"
+        android:width="50dp"
+        android:imeOptions="actionDone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/kg"
+        android:id="@+id/tvCalfRaisesKG"
+        android:layout_alignTop="@+id/tvCalfRaises"
+        android:layout_toLeftOf="@+id/btnSaveCalfRaises"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:id="@+id/btnSaveCalfRaises"
+        android:layout_alignBottom="@+id/tvCalfRaises"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/etCalfRaises"
+        android:layout_marginRight="@dimen/save_button_margin_right"/>
 </RelativeLayout>

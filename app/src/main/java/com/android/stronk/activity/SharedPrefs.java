@@ -10,6 +10,9 @@ public class SharedPrefs {
 
     public static final String FILE_NAME = "preferences";
 
+    public static final String FRONT_SQUAT_PREF = "frontsquat";
+    public static final String GLUTE_HAM_RAISES_PREF = "glutehamraises";
+    public static final String CALF_RAISES_PREF = "calfraises";
     public static final String ROM_DEADLIFT_PREF = "romdeadlift";
     public static final String SQUAT_PREF = "squat";
     public static final String DEADLIFT_PREF = "deadlift";
@@ -36,6 +39,18 @@ public class SharedPrefs {
 
     public static void setWeightRomDeadlift(Context context, double weight) {
         setWeight(context, weight, ROM_DEADLIFT_PREF);
+    }
+
+    public static void setWeightFrontSquat(Context context, double weight) {
+        setWeight(context, weight, FRONT_SQUAT_PREF);
+    }
+
+    public static void setWeightGluteHamRaises(Context context, double weight) {
+        setWeight(context, weight, GLUTE_HAM_RAISES_PREF);
+    }
+
+    public static void setWeightCalfRaises(Context context, double weight) {
+        setWeight(context, weight, CALF_RAISES_PREF);
     }
 
     public static void setWeightPullUp(Context context, double weight) {
@@ -91,6 +106,18 @@ public class SharedPrefs {
 
     public static double getWeightSquat(Context context) {
         return getWeight(context, SQUAT_PREF);
+    }
+
+    public static double getWeightFrontSquat(Context context) {
+        return getWeight(context, FRONT_SQUAT_PREF);
+    }
+
+    public static double getWeightGluteHamRaises(Context context) {
+        return getWeight(context, GLUTE_HAM_RAISES_PREF);
+    }
+
+    public static double getWeightCalfRaises(Context context) {
+        return getWeight(context, CALF_RAISES_PREF);
     }
 
     public static double getWeightRomDeadlift(Context context) {
